@@ -1,0 +1,8 @@
+# Demo experiment configuration (structured local protocol B).
+# Password is demonstration-only and must never be presented as a secret.
+experiment_name: pm-bg-aes-demo
+warmup_runs: 1
+measured_repetitions: 5
+demo_password: "PMBG-AES-DEMO-2026"
+demo_dir: data/demo
+manifest: data/manifest.csv

@@ -1,0 +1,46 @@
+run_id=smoke01 config=configs/demo.yaml
+config validated
+pytest returncode=0
+64 passed, 1 warning in 0.92s
+DEMO-001: n=4 len_hill=0 roundtrip=OK
+DEMO-002: n=6 len_hill=36 roundtrip=OK
+DEMO-003: n=4 len_hill=6000 roundtrip=OK
+DEMO-004: n=6 len_hill=5982 roundtrip=OK
+DEMO-005: n=12 len_hill=99996 roundtrip=OK
+DEMO-006: n=24 len_hill=600000 roundtrip=OK
+DEMO-007: n=6 len_hill=486 roundtrip=OK
+DEMO-008: n=48 len_hill=5199984 roundtrip=OK
+DEMO-009: n=8 len_hill=100000 roundtrip=OK
+DEMO-010: n=16 len_hill=600000 roundtrip=OK
+DEMO-011: n=32 len_hill=5200000 roundtrip=OK
+wrote 154 benchmark rows, 11 integrity rows
+--- experiments ---
+DEMO-001: n=4 len_hill=0 roundtrip=OK
+DEMO-002: n=6 len_hill=36 roundtrip=OK
+DEMO-003: n=4 len_hill=6000 roundtrip=OK
+DEMO-004: n=6 len_hill=5982 roundtrip=OK
+DEMO-005: n=12 len_hill=99996 roundtrip=OK
+DEMO-006: n=24 len_hill=600000 roundtrip=OK
+DEMO-007: n=6 len_hill=486 roundtrip=OK
+DEMO-008: n=48 len_hill=5199984 roundtrip=OK
+DEMO-009: n=8 len_hill=100000 roundtrip=OK
+DEMO-010: n=16 len_hill=600000 roundtrip=OK
+DEMO-011: n=32 len_hill=5200000 roundtrip=OK
+wrote 154 benchmark rows, 11 integrity rows
+
+experiments: returncode=0
+--- summarize ---
+summarized 22 (dataset, phase) groups
+
+summarize: returncode=0
+--- figures ---
+wrote 5 figures (+svg) to results/runs/smoke01/figures
+
+figures: returncode=0
+cli pm_bg_aes.cli encrypt data/demo/demo_002_tiny.bin: rc=0 encrypted n=6 len_hill=36 in=37 out=80
+cli pm_bg_aes.cli decrypt results/runs/smoke01/scratch/smoke/tiny.enc: rc=0 decrypted out=37
+cli pm_bg_aes.cli verify data/demo/demo_002_tiny.bin: rc=0 sha256 original : c33aef5769fc88357a5805ef4e4d171ce91fdacf03d93c7826a944d4a725d11b
+sha256 recovered: c33aef5769fc88357a5805ef4e4d171ce91fdacf03d93c7826a944d4a725d11b
+sizes: 37 vs 37
+MATCH: byte-identical
+report written; run complete

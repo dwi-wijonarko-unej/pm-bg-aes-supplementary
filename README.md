@@ -1,0 +1,68 @@
+# PM-BG-AES — Supplementary Research Artifacts (local candidate v0.1.0)
+
+Archival supplementary package for the paper *"Graph-Based Permutation
+Matrix Generation and Intelligent Dynamic Block Optimization for Hybrid
+Hill Cipher–AES Enterprise Data Protection"* (draft 12 Sept 2026).
+**Status: local review candidate. Nothing is published; no GitHub/Zenodo
+deposit has been made.**
+
+> These are new local demonstration measurements, not reproductions of the
+> manuscript's original numerical results. Original F1..F9 inputs were not
+> available in the workspace.
+
+## Scope
+
+- **Preserved**: original notebooks byte-identical in `notebooks/original/`
+  (checksums in `docs/source_inventory.md`).
+- **Faithful port**: canonical notebook cell → `src/pm_bg_aes/` (Colab I/O
+  adapted to local files; zero semantic changes in archival mode; see
+  `docs/source_traceability.csv`, `docs/algorithm.md`).
+- **Added transparently**: CLI, seeded demo dataset (DEMO-001..011),
+  structured benchmarks, derived analyses, figures — all labelled as new.
+- **Not included / not imitated**: UCEF scorer, Shift-128 definition,
+  original datasets, manuscript DOCX (excluded from the release archive).
+
+## Quick start
+
+```
+pip install -r requirements.txt
+python scripts/reproduce_all.py --config configs/demo.yaml
+pytest
+```
+
+## CLI
+
+```
+python -m pm_bg_aes.cli encrypt INPUT --output OUT   # password via getpass
+python -m pm_bg_aes.cli decrypt INPUT --output OUT
+python -m pm_bg_aes.cli verify ORIGINAL RECOVERED
+python -m pm_bg_aes.cli inspect CIPHERTEXT
+PM_BG_AES_DEMO_PASSWORD=... python -m pm_bg_aes.cli encrypt ... --demo-password ...
+```
+
+Non-interactive runs use an explicitly demonstration-only password (never a
+secret; never logged). Colab users: see `notebooks/demo_colab.ipynb`.
+
+## Results
+
+`results/raw/` (per-repetition measurements + provenance),
+`results/summary/`, `results/figures/` (PNG+SVG), `results/logs/`,
+per-run dirs under `results/runs/`. Latest run report:
+`results/runs/<id>/EXECUTION_REPORT.md`.
+
+## Docs
+
+`docs/source_inventory.md` · `source_traceability.csv` ·
+`algorithm.md` · `file_format.md` · `benchmark_protocol.md` ·
+`reproducibility.md` · `limitations.md` · `equivalence_report.md` ·
+`manuscript_artifact_mapping.csv` · `author_questions.md`
+([BUTUH INPUT PENULIS]) · `availability_statement_draft.md` ·
+`release_checklist.md`.
+
+## Limitations & license
+
+Research artifact. **Not for production use** (unauthenticated,
+SHA-256 single-pass key derivation — see `docs/limitations.md`).
+`LICENSE` is a placeholder: license selection pending author approval; no
+distribution rights are claimed. Citation metadata (`CITATION.cff`,
+`.zenodo.json`) is draft; DOI/URLs pending.

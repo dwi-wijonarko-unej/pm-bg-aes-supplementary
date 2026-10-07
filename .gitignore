@@ -1,0 +1,9 @@
+.venv/
+build/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/logs/__pycache__/
+results/runs/*/scratch/
+tmp_scratch/
+*.docx

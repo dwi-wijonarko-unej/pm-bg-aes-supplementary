@@ -1,0 +1,19 @@
+{
+  "title": "PM-BG-AES Supplementary Research Artifacts (DRAFT — pending author confirmation)",
+  "version": "v0.1.0",
+  "description": "Archival supplementary artifacts for a hybrid permutation-matrix + AES-CBC cryptosystem paper: faithful code port, demo dataset, measurements, figures. Draft metadata; nothing published.",
+  "resource_type": { "type": "software", "title": "Software" },
+  "creators": [
+    { "name": "Arifin, Samsul" },
+    { "name": "Kurniawan, Ade" },
+    { "name": "Muharam, Muhamad Totoh" },
+    { "name": "Ansori" },
+    { "name": "Tiawan" },
+    { "name": "Putra, Merios Gusan" },
+    { "name": "Sijabat, Edwin Kristianto" },
+    { "name": "Hakim, Dani Lukman" },
+    { "name": "Wijonarko, Dwi" }
+  ],
+  "license": null,
+  "notes": "DRAFT for local review only. License, contributor roles, related paper identifiers, and DOI pending author confirmation (docs/author_questions.md). Related paper DOI only to be added when known. Do not publish from this file."
+}

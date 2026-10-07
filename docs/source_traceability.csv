@@ -1,0 +1,27 @@
+source_file,cell_index,cell_id,source_function,target_module,role,behavior_preserved,notes
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,hitung_entropy,src/pm_bg_aes/entropy.py,archival-base,yes (empty-input guard added as documented edge case),canonical semantics from ori cell 1; empty input returns 0.0 with no warning (notebook yields RuntimeWarning + -0.0)
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,pilih_matriks_ai,src/pm_bg_aes/selector.py,archival-base,yes,thresholds in bytes; rule-based (not a trained ML model); printing moved to callers
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,kunci_permutasi,src/pm_bg_aes/permutation.py,archival-base,yes,"p=n//2,q=n-p; swap (p,p+1) if q>=2, (p+2,p+3) if q>=4; inverse via transpose; 'e' second return normalised to None (notebook returns 0 or identity, always discarded)"
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,aes_encrypt,src/pm_bg_aes/aes_tail.py,archival-base,yes,"key=SHA256('0.'+password+'1'); random-IV AES-CBC; PKCS7 pad; returns IV+ciphertext"
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,aes_decrypt,src/pm_bg_aes/aes_tail.py,archival-base,yes,IV split at 16 bytes; unpad; no authentication tag (documented limitation)
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,md5,src/pm_bg_aes/integrity.py,archival-base,yes (generalised to bytes+file),legacy comparison digest only
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,enkripsi,src/pm_bg_aes/crypto.py,archival-base,yes (Colab I/O adapted),"uint8 read; selector; len_shift=N%n; len_hill=N-len_shift; reshape(n,len_hill/n); P@M%256 int32; headers 4+8 BE; AES tail; Colab upload/download replaced by local paths"
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,dekripsi,src/pm_bg_aes/crypto.py,archival-base,yes (validation added),"parse headers; split; P.T@M%256; AES decrypt; concat; structural validation raises CipherFormatError (no output change on valid inputs)"
+PM_BG_+_AES_(works)_ori.ipynb,0,pzmk8lalNUbQ,"main-menu input()/files block",src/pm_bg_aes/cli.py,adapted,colab-only I/O replaced,"argparse CLI; getpass default; demo password only via explicit flag/env; no passwords in logs"
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,hitung_entropy,src/pm_bg_aes/entropy.py,canonical,yes (see above),canonical cell: ori cell 1 == workshop cell 1 byte-identical
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,cetak_laporan_performa,src/pm_bg_aes/metrics.py,canonical,yes (units relabelled),"throughput denominator orig_size labelled MiB/s (notebook prints MB/detik); memory labelled traced peak (notebook prints Peak Memory RAM)"
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,pilih_matriks_ai,src/pm_bg_aes/selector.py,canonical,yes,identical thresholds to cell 0
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,kunci_permutasi,src/pm_bg_aes/permutation.py,canonical,yes,identical swaps to cell 0
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,aes_encrypt,src/pm_bg_aes/aes_tail.py,canonical,yes,identical to cell 0
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,aes_decrypt,src/pm_bg_aes/aes_tail.py,canonical,yes,identical to cell 0
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,enkripsi,src/pm_bg_aes/crypto.py,canonical,yes + metrics separated,"crypto core has no prints/timing; scripts/run_experiments.py reproduces the time.time/tracemalloc/psutil boundary faithfully and adds perf_counter structured protocol separately"
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,dekripsi,src/pm_bg_aes/crypto.py,canonical,yes + metrics separated,same separation as enkripsi
+PM_BG_+_AES_(works)_ori.ipynb,1,7495Mw2mNX3t,saved stdout (decrypt FileAttachment.pdf 104300->104267 B),docs/source_inventory.md §4,original-output-preserved,N/A,"category B evidence; input file missing; values NOT copied into results/raw"
+PM_BG_+_AES_(works)_workshop.ipynb,0,pzmk8lalNUbQ,(all),—,duplicate,yes,byte-identical to ori cell 0; no separate mapping
+PM_BG_+_AES_(works)_workshop.ipynb,1,7495Mw2mNX3t,(all),—,duplicate,yes,byte-identical to ori cell 1; no separate mapping
+PM_BG_+_AES_(works)_workshop.ipynb,2,QCUa6hQsvSCO,print_array_preview,notebooks/demo_colab.ipynb (concept),adapted,console-preview only,preview helper idea reused in demo notebook; excluded from benchmark path
+PM_BG_+_AES_(works)_workshop.ipynb,2,QCUa6hQsvSCO,"enkripsi/dekripsi visualisation flow",notebooks/demo_colab.ipynb (concept),adapted,step-by-step narrative reused in demo notebook on synthetic data
+PM_BG_+_AES_(works)_workshop.ipynb,2,QCUa6hQsvSCO,saved stdout (encrypt COMNET PDF 2006753 B n=24),docs/source_inventory.md §4,original-output-preserved,N/A,"category B evidence; input file missing; values NOT copied into results/raw"
+Draft Paper PM_BG_AES 12Sept2026.docx,Tables 3+7,—,reported metrics,results/summary/* (new local runs only),not reproduced,manuscript numbers are category F; our CSVs contain only new demo measurements
+Draft Paper PM_BG_AES 12Sept2026.docx,Table 6,—,UCEF assessment,— (missing),no implementation,no UCEF imitation created; recorded as missing_requirement
+Draft Paper PM_BG_AES 12Sept2026.docx,Fig.7/S8 prose,—,Shift-128 residual,— (missing),no implementation,notebook AES tail is NOT Shift-128; no figure generated; author input required

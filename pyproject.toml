@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm-bg-aes"
+version = "0.1.0"
+description = "PM-BG-AES hybrid codec research artifact (archival supplementary package)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pycryptodome>=3.18", "psutil>=5.9"]
+authors = [{ name = "Contributors pending author confirmation (see docs/author_questions.md Q7)" }]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.6", "scipy>=1.10"]
+test = ["pytest>=7"]
+docs = ["pyyaml>=6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "PM-BG-AES Supplementary Research Artifacts (DRAFT — pending author confirmation)"
+version: 0.1.0
+date-released: 2026-10-07
+# DRAFT metadata: paper authorship recorded from the manuscript draft;
+# software contributors may differ. No ORCIDs/e-mails claimed.
+# DOI and repository URL pending — do not cite as published.
+authors:
+  - family-names: Arifin
+    given-names: Samsul
+  - family-names: Kurniawan
+    given-names: Ade
+  - family-names: Muharam
+    given-names: Muhamad Totoh
+  - family-names: Ansori
+  - family-names: Tiawan
+  - family-names: Putra
+    given-names: Merios Gusan
+  - family-names: Sijabat
+    given-names: Edwin Kristianto
+  - family-names: Hakim
+    given-names: Dani Lukman
+  - family-names: Wijonarko
+    given-names: Dwi
+keywords:
+  - hybrid cryptosystem
+  - permutation matrix
+  - AES-CBC
+  - reproducibility
+license: "License selection pending author approval (see LICENSE)"
+repository-code: "[GITHUB_REPOSITORY_URL]"
