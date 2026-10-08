@@ -102,7 +102,7 @@ The selected code uses deterministic file-size/entropy thresholds, not a
 trained model. Public documentation describes a rule-based adaptive selector;
 no trained model was found or invented.
 
-## Q9. Initial release approval — confirmed; publication pending
+## Q9. Initial release approval — confirmed; published 2026-10-08
 
 The conservative v1.0.0 scope is adopted; tag is `v1.0.0`. Public notebooks are
 sanitized copies in `notebooks/public/`, with source unchanged and saved
@@ -110,10 +110,11 @@ outputs/metadata stripped, not checksum-identical full-file originals. See
 [notebook preservation/redaction](notebook_preservation_and_redaction.md) and
 [public artifact review](public_artifact_review.csv).
 
-Local candidate prepared; publication performed by maintainer after candidate validation.
-The candidate archive must be a fresh v1.0.0 package matching the sanitized
-snapshot, not the earlier selectively patched ZIP. Final scope/redaction and
-run validation remain necessary. No release date or DOI is claimed.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132). The
+candidate archive was the v1.0.0 package matching the sanitized
+snapshot, not the earlier selectively patched ZIP. No release date beyond
+2026-10-08 or other DOI is claimed.
 
 ## Q10. Password policy — implementation behavior documented
 

@@ -23,5 +23,5 @@
       "scheme": "url"
     }
   ],
-  "notes": "Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08. Source: maintainer instruction for the current task; no individual signatures, independent third-party permission, or historical experiment provenance is asserted. MIT covers repository-owned code, documentation, and synthetic demo data, not excluded third-party research materials. The nine metadata names and their existing order are confirmed; specific contributor roles are not assigned. Local candidate prepared; publication performed by maintainer after candidate validation. Release tag: v1.0.0. DOI assignment remains pending with the maintainer; no release date or DOI is claimed."
+  "notes": "Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08. Source: maintainer instruction for the release-preparation task; no individual signatures, independent third-party permission, or historical experiment provenance is asserted. MIT covers repository-owned code, documentation, and synthetic demo data, not excluded third-party research materials. The nine metadata names and their existing order are confirmed; specific contributor roles are not assigned. Published as GitHub Release v1.0.0 on 2026-10-08; version DOI 10.5281/zenodo.23228132 (https://doi.org/10.5281/zenodo.23228132)."
 }

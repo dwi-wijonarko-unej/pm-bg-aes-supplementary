@@ -1,10 +1,13 @@
-# Release notes — v1.0.0 (local candidate, not yet published)
+# Release notes — v1.0.0 (published 2026-10-08)
 
-**PM-BG-AES Supplementary Research Artifacts, version 1.0.0 (intended tag
-`v1.0.0`).** Local candidate prepared 2026-10-08 on baseline
-`77cac3dd475f2999364ecd2f3c7d44e6ff6cb812` with local modifications.
-**No GitHub Release, Zenodo deposit, or DOI assignment has occurred.**
-Publication remains with the maintainer after candidate validation.
+[![DOI](https://zenodo.org/badge/1408258783.svg)](https://doi.org/10.5281/zenodo.23228132)
+
+**PM-BG-AES Supplementary Research Artifacts, version 1.0.0 (tag
+`v1.0.0`).** Prepared 2026-10-08 on baseline
+`77cac3dd475f2999364ecd2f3c7d44e6ff6cb812` with local modifications,
+committed as `1e3380d`, published as GitHub Release `v1.0.0` and archived on
+Zenodo: **[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132)**.
+Please cite using the DOI.
 
 Team approval reported/confirmed by repository maintainer Dwi Wijonarko on
 2026-10-08 (see `docs/release_approval.md`).

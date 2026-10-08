@@ -1,6 +1,9 @@
 # PM-BG-AES Supplementary Research Artifacts
 
-**Version 1.0.0 · intended tag `v1.0.0` · local release candidate**
+[![DOI](https://zenodo.org/badge/1408258783.svg)](https://doi.org/10.5281/zenodo.23228132)
+
+**Version 1.0.0 · tag `v1.0.0` · published 2026-10-08 · DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132)**
 
 Supplementary research software for _Graph-Based Permutation Matrix Generation
 and Intelligent Dynamic Block Optimization for Hybrid Hill Cipher–AES Enterprise
@@ -15,8 +18,8 @@ inputs and clearly labelled new demonstration results under MIT, plus sanitized
 public notebooks and reviewed evidence summaries. Approval is reported by the
 maintainer, not individual signatures, third-party redistribution permission or
 confirmation of historical experiments. See [release approval](docs/release_approval.md).
-Local candidate prepared; publication performed by maintainer after candidate
-validation. No release date, publication action or DOI assignment is claimed.
+Published as GitHub Release `v1.0.0` on 2026-10-08 and archived on Zenodo
+([DOI](https://doi.org/10.5281/zenodo.23228132)).
 
 > These are new local demonstration measurements, not reproductions of the
 > manuscript's original numerical results. **Not for production cryptography.**
@@ -103,7 +106,7 @@ not manuscript Figures 5–7 or S1–S8. See [results](results/README.md) and
 
 `CITATION.cff` and `.zenodo.json` use the confirmed nine metadata names in their
 existing order, without assigning contributor roles. Version is `1.0.0`; tag is
-`v1.0.0`. DOI and actual release date will be recorded only after publication.
+`v1.0.0`; DOI is [10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
 
 [MIT](LICENSE) covers repository-owned code, documentation and synthetic demo
 inputs. The accepted holder is **PM-BG-AES contributors**. It does not grant

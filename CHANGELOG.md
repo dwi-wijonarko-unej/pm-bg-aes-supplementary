@@ -1,6 +1,15 @@
 # Changelog
 
-## [1.0.0] — local candidate prepared 2026-10-08 (not yet released)
+## [1.0.0] — published 2026-10-08 (tag `v1.0.0`, Zenodo DOI 10.5281/zenodo.23228132)
+
+- GitHub Release `v1.0.0` created and Zenodo version DOI
+  [10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132) assigned
+  on 2026-10-08. `CITATION.cff` now records `doi` and `date-released`;
+  README carries the Zenodo badge.
+- Post-publication wording synced across README and docs (candidate →
+  released); release checklist section C items for release/DOI completed.
+
+## [1.0.0] — local candidate prepared 2026-10-08 (superseded by publication above)
 
 - Align package, citation and archival metadata to `1.0.0` (intended tag
   `v1.0.0`) and title PM-BG-AES Supplementary Research Artifacts.

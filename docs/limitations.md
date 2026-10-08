@@ -67,8 +67,10 @@ excluded private evidence, not executable public inputs.
     and the existing nine metadata names/order, without assigning roles or
     claiming individual signatures. Source/rights holders and affirmative
     redistribution permission for excluded F1..F9/manuscript/UCEF materials
-    remain not documented. Publication and DOI assignment remain with the
-    maintainer after candidate validation; no release date is asserted.
+    remain not documented. Publication occurred as GitHub Release `v1.0.0` on
+    2026-10-08 with version DOI
+    [10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132); no other
+    release date or DOI is asserted.
 13. **Public notebook preservation is source-level, not full-file identity.**
     Copies in `notebooks/public/` retain cell source and strip outputs/metadata.
     Historical original hashes do not identify sanitized public files. Raw/root

@@ -93,8 +93,9 @@ The conservative MIT code/docs/synthetic demo scope is adopted; all F1..F9
 payloads and `results/analysis result/` are excluded. Source/rights holders are
 not documented; approval to exclude is not third-party redistribution permission.
 Scientific gaps are accepted release limitations, not resolved findings.
-Local candidate prepared; publication performed by maintainer after candidate validation.
-Version is `1.0.0`, intended tag `v1.0.0`; no release date or DOI is claimed.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
+Version is `1.0.0`, tag `v1.0.0`.
 
 Before claiming original manuscript reproduction, recover input hashes/version
 mapping, historical environment/protocol, missing inputs, UCEF definitions and

@@ -1,25 +1,25 @@
-# Availability statement — approved scope, publication pending
+# Availability statement — v1.0.0 published 2026-10-08
 
 Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08.
 
-The filename is retained for existing links. The conservative initial scope is
-now adopted, not merely proposed. Source: the maintainer's instruction for this
-task, "Tim sudah setuju semua, tinggal konfirmasi di dokumen." This is not a
+The filename is retained for existing links. The conservative initial scope
+was adopted before publication and the release has since been published (see
+below). Source: the maintainer's instruction for the preparation task, "Tim
+sudah setuju semua, tinggal konfirmasi di dokumen." This is not a
 record of individual signatures, independent third-party permissions or
 historical-run authentication. See [release approval](release_approval.md).
 
-## Current candidate statement
+## Published statement
 
-> PM-BG-AES Supplementary Research Artifacts, version 1.0.0 (intended tag
-> v1.0.0), is prepared as a local candidate for
-> https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary. The approved
-> conservative scope comprises repository-owned code and documentation,
-> synthetic inputs DEMO-001..DEMO-011, sanitized public notebooks and clearly
-> labelled newly measured demo results under MIT, with reviewed historical
-> evidence summaries. The nine metadata names and their existing order are
-> confirmed without assigning specific contributor roles. Publication and DOI
-> assignment remain with the maintainer after candidate validation; no release
-> date or DOI is asserted here.
+> PM-BG-AES Supplementary Research Artifacts, version 1.0.0 (tag
+> `v1.0.0`), is published at
+> https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary and archived
+> on Zenodo at https://doi.org/10.5281/zenodo.23228132 (published 2026-10-08).
+> The approved conservative scope comprises repository-owned code and
+> documentation, synthetic inputs DEMO-001..DEMO-011, sanitized public
+> notebooks and clearly labelled newly measured demo results under MIT, with
+> reviewed historical evidence summaries. The nine metadata names and their
+> existing order are confirmed without assigning specific contributor roles.
 >
 > All F1..F9 original/encrypted/decrypted payloads, the entire historical
 > results/analysis result/ folder, raw/root notebook originals, DOCX
@@ -40,7 +40,8 @@ historical-run authentication. See [release approval](release_approval.md).
 > manuscript's original numerical results. The artifact is not production
 > cryptography.
 
-Local candidate prepared; publication performed by maintainer after candidate validation.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
 
 ## Scope and evidence records
 
@@ -58,11 +59,10 @@ Local candidate prepared; publication performed by maintainer after candidate va
 - [Evidence audit](evidence_audit.md) and [limitations](limitations.md) retain
   scientific uncertainties accepted for the conservative release.
 
-## Publication wording after validation
+## Publication wording (now applied)
 
-Only after the maintainer publishes the validated candidate should this
-statement change from "local candidate" to "released" and identify the actual
-release/archive and verified DOI, if assigned. The current archive must match
-v1.0.0, not the historical wording-patched ZIP. No publication action is implied
-by the repository URL or metadata. Excluding files from a new tracked snapshot
+The statement above reflects the published release and its verified DOI.
+The pre-publication archive matched v1.0.0, not the historical
+wording-patched ZIP. No publication action is implied
+by the repository URL or metadata alone. Excluding files from a new tracked snapshot
 does not erase their earlier public Git history.

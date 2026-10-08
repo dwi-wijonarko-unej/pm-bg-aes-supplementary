@@ -30,7 +30,8 @@ The earlier audit's untracked finding describes that earlier state. Research
 materials were later tracked in the supplied public Git baseline; deletion
 from a new snapshot does not erase prior history. The designated new demo run
 is `v1.0.0-demo-20261008T020017Z`; its own report/logs establish validation.
-Local candidate prepared; publication performed by maintainer after candidate validation.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
 
 ## 1. Historical workspace inventory (2026-10-07; audited 2026-10-08)
 
@@ -175,7 +176,7 @@ as manuscript figures).
   not documented. See `docs/release_approval.md` and author questions Q6/Q9.
 
 Earlier local ZIPs received selective wording/license patches; that is historical
-context, not the current candidate state. The v1.0.0 archive must be freshly
-prepared from the reviewed sanitized snapshot, with no claim of publication,
-release date or DOI until the maintainer publishes after validation. This
+context, not the current published state. The v1.0.0 archive was freshly
+prepared from the reviewed sanitized snapshot and published 2026-10-08
+(DOI 10.5281/zenodo.23228132). This
 inventory retains evidence identity, not an inclusion list for private payloads.

@@ -1,4 +1,10 @@
-# Release preparation report — v1.0.0 candidate (2026-10-08)
+# Release preparation report — v1.0.0 (published 2026-10-08; DOI 10.5281/zenodo.23228132)
+
+This report records the candidate preparation. Publication has since
+occurred: commit `1e3380d`, tag `v1.0.0`, GitHub Release `v1.0.0`, Zenodo
+version DOI [10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
+Post-publication wording sync (badge, `doi`/`date-released`, released
+statements) is recorded in `CHANGELOG.md`.
 
 ## 1. Baseline and dirty-state context
 
@@ -60,7 +66,8 @@ and excluded from the new ZIP.
 
 `pyproject.toml` 1.0.0, `__version__` 1.0.0, `CITATION.cff` 1.0.0 (valid CFF
 mapping, 9 authors, no `date-released`), `.zenodo.json` 1.0.0 (valid JSON,
-software/mit, 9 creators, `isSupplementTo` repo URL, DOI pending), README
+software/mit, 9 creators, `isSupplementTo` repo URL; at preparation time the DOI
+was pending and no fake DOI was used), README
 candidate v1.0.0, builder 1.0.0, ZIP `pm-bg-aes-supplementary-v1.0.0.zip`.
 Title/version/creators/license agree across CFF and Zenodo files. No `0.1.0`
 remains in included scope; no DOI/URL placeholders remain; no fake DOI.
@@ -108,9 +115,9 @@ unauthenticated AES-CBC tail; not production cryptography.
 ## 10. Checklist and remote status
 
 Pre-release gates R1–R9: **all PASS** (`docs/release_checklist.md`).
-Post-publication actions (section C): **all unchecked** — no commit, push,
-tag, GitHub Release, Zenodo deposit, or DOI assignment performed in this
-task. Exact maintainer actions: review diff → commit approved state (89
+Post-publication actions: release/tag/DOI done 2026-10-08; Zenodo record
+inspection and manuscript-side citation update remain with the maintainer.
+Exact maintainer actions: review diff → commit approved state (89
 deletions) → verify clean `v1.0.0` snapshot → enable Zenodo → create GitHub
 Release → verify Zenodo record → record version DOI → update manuscript
 statement/citation. See `docs/zenodo_publication_handoff.md`.

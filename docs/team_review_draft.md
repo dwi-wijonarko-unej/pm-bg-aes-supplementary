@@ -81,9 +81,10 @@ https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary.
 Run demo yang ditetapkan: `v1.0.0-demo-20261008T020017Z`, dengan bukti hasil
 pada `results/runs/v1.0.0-demo-20261008T020017Z/` dan latest copies.
 
-Local candidate prepared; publication performed by maintainer after candidate validation.
-Belum ada klaim publikasi, tanggal rilis atau DOI. Kandidat arsip v1.0.0 harus
-sesuai snapshot bersih, bukan ZIP lama yang hanya mendapat patch dokumentasi.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
+Belum ada klaim tanggal rilis atau DOI selain yang di atas. Arsip kandidat v1.0.0
+telah sesuai snapshot bersih, bukan ZIP lama yang hanya mendapat patch dokumentasi.
 Lihat [persetujuan rilis](release_approval.md),
 [pernyataan availability](availability_statement_draft.md) dan
 [batasan](limitations.md).

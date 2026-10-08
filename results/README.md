@@ -49,4 +49,5 @@ Git history is not erased by candidate-tree deletion.
 
 See [reproducibility](../docs/reproducibility.md),
 [limitations](../docs/limitations.md) and [approval](../docs/release_approval.md).
-Local candidate prepared; publication performed by maintainer after candidate validation.
+Published as GitHub Release `v1.0.0` on 2026-10-08; version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).

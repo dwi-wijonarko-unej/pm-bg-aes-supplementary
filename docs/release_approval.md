@@ -64,9 +64,10 @@ not resolved scientific claims. See [limitations](limitations.md) and
 ## Candidate versus publication
 
 Local candidate prepared; publication performed by maintainer after candidate validation.
-This approval authorizes preparation of the conservative candidate, not a claim
-that GitHub release, Zenodo deposit or DOI assignment has occurred. No release
-date or DOI is invented. The v1.0.0 archive must be a fresh candidate matching
+That publication has now occurred: GitHub Release `v1.0.0` (commit `1e3380d`,
+tag `v1.0.0`) on 2026-10-08, archived on Zenodo with version DOI
+[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132). No other
+release date or DOI is claimed. The v1.0.0 archive was a fresh candidate matching
 the sanitized snapshot, not the earlier patched ZIP.
 
 Excluded material is preserved as private evidence outside the public snapshot;

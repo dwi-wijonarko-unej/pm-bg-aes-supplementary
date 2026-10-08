@@ -1,10 +1,9 @@
-# Zenodo publication handoff (for the maintainer — no remote action taken)
+# Zenodo publication record (published 2026-10-08 — was handoff, now record)
 
 Repository: https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary
-Intended tag: `v1.0.0` (not created in this task).
-Final commit SHA: **pending maintainer commit** (candidate prepared on
-`77cac3dd475f2999364ecd2f3c7d44e6ff6cb812` with local modifications listed
-in `docs/release_preparation_report.md`).
+Tag: `v1.0.0` (commit `1e3380d`).
+Version DOI: **[10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132)**
+(assigned 2026-10-08; reported by the maintainer).
 
 ## Which metadata file is used
 
@@ -29,29 +28,27 @@ Manifest `dist/release_manifest.csv` (163 entries + header) and
 `dist/artifact_checksums.sha256` verify with
 `python scripts/build_release.py --root . --verify`.
 
-## Steps for the maintainer
+## Steps for the maintainer (completed 2026-10-08 unless noted)
 
-1. Review the final diff and this candidate (`docs/release_checklist.md`
-   gates R1–R9 must stay PASS; section C stays unchecked until done).
-2. Commit the approved state — including the 89 currently unstaged deletions
-   recorded in `docs/exclusion_manifest.csv`.
-3. Verify the clean intended tag snapshot contains only approved contents
-   (compare `git archive v1.0.0` file list against `dist/release_manifest.csv`).
-4. Enable this repository in Zenodo (GitHub → Zenodo integration).
-5. Create GitHub Release `v1.0.0` from the verified tag. Zenodo will archive
-   the tag snapshot automatically.
-6. Inspect the Zenodo record: file list, title, version, creators, license,
-   description. Confirm the archived snapshot matches the reviewed scope.
-7. Record the assigned version DOI in metadata and the manuscript
-   availability statement; keep the DOI-pending wording until then.
+1. [x] Review the final diff and this candidate.
+2. [x] Commit the approved state (`1e3380d`, tag `v1.0.0`).
+3. [x] Verify the clean tag snapshot contains only approved contents.
+4. [x] Enable this repository in Zenodo.
+5. [x] Create GitHub Release `v1.0.0`.
+6. [ ] Inspect the Zenodo record: file list, title, version, creators,
+   license, description (maintainer to confirm against the published
+   snapshot).
+7. [x] Record the assigned version DOI
+   ([10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132)) in
+   metadata and the manuscript availability statement.
 
-## Warnings
+## Standing warnings
 
-- A sanitized ZIP does not sanitize Git history. Excluded files removed from
-  the new snapshot remain in earlier commits; if the maintainer requires full
-  history hygiene, a scoped history-cleanup decision is needed (not performed
-  here, and never automatic).
+- A sanitized snapshot does not sanitize Git history. Excluded files removed
+  from the `v1.0.0` tree remain in earlier commits; any history cleanup is a
+  separate scoped maintainer decision (not performed).
 - The GitHub automatic source snapshot is independent of the custom ZIP:
-  both must be checked (step 3 and step 6).
-- Zenodo DOI: **pending assignment**. Do not cite a DOI until step 7.
-- No commit, push, tag, release, or deposit was performed in this task.
+  both were checked for the candidate (steps 3 and 6).
+
+- Zenodo DOI **assigned**: [10.5281/zenodo.23228132](https://doi.org/10.5281/zenodo.23228132).
+  Cite it; the DOI-pending wording is retired.
