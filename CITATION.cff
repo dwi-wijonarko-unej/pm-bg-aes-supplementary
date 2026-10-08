@@ -1,10 +1,8 @@
 cff-version: 1.2.0
-title: "PM-BG-AES Supplementary Research Artifacts (DRAFT — pending author confirmation)"
-version: 0.1.0
-date-released: 2026-10-07
-# DRAFT metadata: paper authorship recorded from the manuscript draft;
-# software contributors may differ. No ORCIDs/e-mails claimed.
-# DOI and repository URL pending — do not cite as published.
+message: "Please cite this software using this metadata. Version 1.0.0 is a local release candidate; publication and DOI assignment remain with the maintainer."
+title: "PM-BG-AES Supplementary Research Artifacts"
+type: software
+version: 1.0.0
 authors:
   - family-names: Arifin
     given-names: Samsul
@@ -28,4 +26,11 @@ keywords:
   - AES-CBC
   - reproducibility
 license: MIT
-repository-code: "[GITHUB_REPOSITORY_URL]"
+repository-code: "https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary"
+abstract: >-
+  Selected notebook implementation ported to Python, sanitized public notebooks,
+  documentation, synthetic demonstration inputs and newly measured demo results.
+  Supplied F1-F9 payloads and historical research reports are excluded. The demo
+  does not reproduce the manuscript's original numerical results or UCEF analysis
+  and is not production cryptography. Team approval reported/confirmed by repository
+  maintainer Dwi Wijonarko on 2026-10-08.

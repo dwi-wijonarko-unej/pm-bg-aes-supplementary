@@ -1,8 +1,8 @@
 {
-  "title": "PM-BG-AES Supplementary Research Artifacts (DRAFT — pending author confirmation)",
-  "version": "v0.1.0",
-  "description": "Archival supplementary artifacts for a hybrid permutation-matrix + AES-CBC cryptosystem paper: faithful code port, demo dataset, measurements, figures. Draft metadata; nothing published.",
-  "resource_type": { "type": "software", "title": "Software" },
+  "title": "PM-BG-AES Supplementary Research Artifacts",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "description": "Selected PM-BG-AES notebook implementation ported to Python, sanitized public notebooks, documentation, synthetic inputs DEMO-001 through DEMO-011, and newly measured demonstration results. The conservative initial release excludes supplied F1-F9 original/encrypted/decrypted payloads, the entire historical results/analysis result/ folder, raw notebooks, and DOCX manuscripts/reports. Historical artifact-consistency findings are documented, but original-run attribution, timing reproduction, UCEF analysis, and original figure generation remain unconfirmed. This is a research artifact, not production cryptography.",
   "creators": [
     { "name": "Arifin, Samsul" },
     { "name": "Kurniawan, Ade" },
@@ -15,5 +15,13 @@
     { "name": "Wijonarko, Dwi" }
   ],
   "license": "mit",
-  "notes": "MIT confirmed by the repository maintainer on 2026-10-08 for repository-owned code, documentation, and synthetic demo data. Third-party dataset/report permissions are separate and remain pending. Contributor roles, related paper identifiers, DOI, and release approval remain unconfirmed (docs/author_questions.md). Related paper DOI only to be added when known. Do not publish from this file."
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08. Source: maintainer instruction for the current task; no individual signatures, independent third-party permission, or historical experiment provenance is asserted. MIT covers repository-owned code, documentation, and synthetic demo data, not excluded third-party research materials. The nine metadata names and their existing order are confirmed; specific contributor roles are not assigned. Local candidate prepared; publication performed by maintainer after candidate validation. Release tag: v1.0.0. DOI assignment remains pending with the maintainer; no release date or DOI is claimed."
 }

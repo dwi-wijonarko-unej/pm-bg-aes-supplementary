@@ -1,7 +1,12 @@
 # Limitations (Read Before Any Claim)
 
 Updated 2026-10-08. See `docs/evidence_audit.md` for supporting artifacts and
-`docs/author_questions.md` for pending decisions.
+`docs/author_questions.md` for unresolved scientific questions.
+
+Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08.
+The conservative v1.0.0 scope is adopted. These scientific limitations are
+accepted for release, not resolved by approval. Historical paths identify
+excluded private evidence, not executable public inputs.
 
 1. **Not production cryptography.** Single-pass SHA-256 password hashing, no
    salt, AES-CBC with a stored random IV and PKCS#7 but no authentication tag.
@@ -22,19 +27,19 @@ Updated 2026-10-08. See `docs/evidence_audit.md` for supporting artifacts and
 5. **Demo data and supplied research materials are distinct.** The pipeline's
    `results/raw/`, summaries and demo figures are new measurements on
    DEMO-001..011 synthetic inputs. They are not the original-run evidence for
-   Tables 3/7. Supplied F1..F9 triplets and reports are now available locally
-   under `results/analysis result/`; artifact consistency is verified while
-   historical-run attribution and distribution decisions remain unconfirmed.
-   The draft recommends excluding this folder from the initial public release,
-   not assuming rights are granted or denied. See `docs/team_review_draft.md`.
+   Tables 3/7. The earlier audit inspected supplied F1..F9 triplets and reports
+   under `results/analysis result/`; artifact consistency was verified while
+   historical-run attribution remained unconfirmed. All payloads and that
+   entire folder are excluded from the adopted initial public scope. Approval
+   to exclude is not permission to redistribute. See `docs/team_review_draft.md`.
    Do not mix supplied reported values into new raw CSVs.
 6. **Consistency is not complete reproduction.** Table 3 matches saved notebook
    stdout, Table 7 matches supplied TXT/MD, and 9/9 original–decrypted pairs
    match. This does not establish original execution version, environment,
    repetitions or authenticity of timing measurements. Inputs for the stored
    FileAttachment and COMNET runs remain unavailable.
-7. **UCEF reports exist; the tool is missing.** Code-analysis v1.0 and
-   data-analysis v3.0 DOCX reports are available, but source/binary,
+7. **UCEF reports were inspected; the tool is missing.** Code-analysis v1.0
+   and data-analysis v3.0 DOCX reports are excluded private evidence; source/binary,
    configuration, input hashes, sampling rules and standalone exports have
    not been located. Full-file F9 entropy/chi-square/adjacent Pearson differ
    from report values. The cause is unconfirmed. Do not imitate the scorer
@@ -56,13 +61,22 @@ Updated 2026-10-08. See `docs/evidence_audit.md` for supporting artifacts and
     including deterministic malformed-input/wrong-password cases, not every
     possible password/tamper outcome or manuscript statistic. Small demo
     files have timing noise; repetitions do not erase it.
-12. **MIT is not blanket artifact or publication approval.** On 2026-10-08
-    the repository maintainer/user confirmed "Lisensi kami gunakan MIT" for
-    repository-owned code, documentation, and synthetic demo data; approval
-    from all authors has not been verified. MIT does not automatically grant
-    rights to third-party F1..F9, the manuscript, or UCEF/supplied reports.
-    Contributor attribution, per-artifact rights, experimental provenance,
-    and publication approval remain pending. The release builder traverses
-    all `results/` without per-file rights gating; its forbidden-path assertion
-    is not a distribution policy. Review an explicit inclusion policy, private
-    content and experimental passwords before any archive.
+12. **Approval has a conservative scope.** MIT covers repository-owned code,
+    documentation and synthetic demo data; the accepted holder remains
+    PM-BG-AES contributors. The maintainer reports team approval of this scope
+    and the existing nine metadata names/order, without assigning roles or
+    claiming individual signatures. Source/rights holders and affirmative
+    redistribution permission for excluded F1..F9/manuscript/UCEF materials
+    remain not documented. Publication and DOI assignment remain with the
+    maintainer after candidate validation; no release date is asserted.
+13. **Public notebook preservation is source-level, not full-file identity.**
+    Copies in `notebooks/public/` retain cell source and strip outputs/metadata.
+    Historical original hashes do not identify sanitized public files. Raw/root
+    notebooks and private outputs are excluded; see
+    `docs/notebook_preservation_and_redaction.md` and
+    `docs/public_artifact_review.csv`.
+14. **Snapshot sanitization does not erase history.** Earlier untracked-file
+    findings describe the earlier audit, not the later publicly tracked
+    baseline. Current-tree deletion does not erase previous Git exposure.
+    The v1.0.0 archive must match the reviewed sanitized snapshot, not the old
+    selectively patched ZIP; candidate validation is still required.

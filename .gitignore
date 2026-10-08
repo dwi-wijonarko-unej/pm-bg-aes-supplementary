@@ -7,3 +7,22 @@ results/logs/__pycache__/
 results/runs/*/scratch/
 tmp_scratch/
 *.docx
+# v1.0.0 public-snapshot hygiene: excluded research/private artifacts must not
+# be reintroduced into the intended public tree (see docs/exclusion_manifest.csv
+# and docs/release_approval.md). Deletions are unstaged for maintainer commit;
+# removal from a new snapshot does not erase prior Git history.
+/results/analysis result/
+/notebooks/original/
+/notebooks/analyze_results.ipynb
+/notebooks/demo_colab.ipynb
+/*.ipynb
+/src/pm_bg_aes.egg-info/
+results/runs/20261007T042845Z/
+results/runs/smoke01/
+dist/pm-bg-aes-supplementary-v0.1.0.zip
+*Zone.Identifier*
+*.pem
+*.key
+.env*
+secrets/
+credentials/

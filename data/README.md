@@ -22,7 +22,17 @@ SHA-256/MD5, sizes, and coverage notes.
 
 `manuscript_dataset_id` is empty for every row: no demo file reproduces or
 stands in for the original F1..F9 manuscript inputs. Repository-owned
-synthetic demonstration data are licensed under MIT, confirmed by the
-repository maintainer on 2026-10-08 (see `LICENSE` and
-`docs/author_questions.md` Q6). This does not license third-party research
-inputs or reports under `results/analysis result/`.
+synthetic demonstration data are licensed under MIT (see `LICENSE`;
+accepted holder PM-BG-AES contributors).
+
+Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08.
+The conservative initial v1.0.0 scope includes these synthetic inputs and
+clearly labelled new results for `v1.0.0-demo-20261008T020017Z`. It excludes
+all F1..F9 original/encrypted/decrypted payloads and the entire historical
+`results/analysis result/` tree. Approval to exclude is not affirmative
+third-party redistribution permission; source/rights holders remain not
+documented. Historical paths/hashes in `docs/dataset_evidence.csv` refer to
+excluded private evidence, not executable inputs in this public package.
+No "available upon request" mechanism is promised. See
+[release approval](../docs/release_approval.md) and
+[distribution decisions](../docs/dataset_distribution_review.csv).

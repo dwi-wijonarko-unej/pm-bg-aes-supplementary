@@ -1,0 +1,3 @@
+decrypted out=37
+
+[demo] using PM_BG_AES_DEMO_PASSWORD (demonstration-only, not a secret)

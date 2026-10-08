@@ -2,30 +2,13 @@
 
 ## Conclusion and scope
 
-The workspace contains an archival implementation, new demonstration results,
-and supplied experiment-supporting materials whose numbers match portions of
-the manuscript. **Artifact consistency is not confirmation of experiment
-provenance, complete numerical reproduction, cryptographic security, or
-publication rights.**
+Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08. The conservative v1.0.0 scope is adopted: repository-owned code/docs/synthetic demo under MIT, with exclusion of all F1..F9 payloads and the entire `results/analysis result/` tree. Historical artifact-consistency findings are documented, but original-run attribution, timing reproduction, UCEF reproducibility, and original figure generation remain unconfirmed scientific limitations.
 
-For team discussion, the proposed provenance conclusion is **artifact
-consistency verified; historical-run attribution unconfirmed**. The proposed
-initial public release excludes supplied F1–F9 triplets and the entire
-`results/analysis result/` folder, pending per-artifact permission/privacy
-review. This is a recommendation, not a rights-holder decision or an enforced
-builder policy. See `docs/team_review_draft.md` and
-`docs/dataset_distribution_review.csv`. Neither experiments nor archives were
-rerun/rebuilt for this draft.
+For team discussion, the proposed provenance conclusion is **artifact consistency verified; historical-run attribution unconfirmed**. The proposed initial public release excludes supplied F1–F9 triplets and the entire `results/analysis result/` folder, pending per-artifact permission/privacy review. This is a recommendation, not a rights-holder decision or an enforced builder policy. See `docs/team_review_draft.md` and `docs/dataset_distribution_review.csv`. Neither experiments nor archives were rerun/rebuilt for this draft.
 
-This audit inspected notebook JSON/source/saved outputs, the benchmark TXT/MD,
-DOCX text and OMML, file sizes/hashes, ciphertext structure, and repository
-code. Notebooks were not executed wholesale; EXE/MSI files were not executed.
-Dataset contents and password values are not reproduced in this document.
-Paths below are relative to the repository root.
+This audit inspected notebook JSON/source/saved outputs, the benchmark TXT/MD, DOCX text and OMML, file sizes/hashes, ciphertext structure, and repository code. Notebooks were not executed wholesale; EXE/MSI files were not executed. Dataset contents and password values are not reproduced in this document. Paths below are relative to the repository root.
 
-The initial 2026-10-07 inventory described a smaller workspace. F1–F9 and
-additional reports/notebooks are present in the 2026-10-08 audit; their date of
-arrival and experimental provenance are not established by that observation.
+The initial 2026-10-07 inventory described a smaller workspace. F1–F9 and additional reports/notebooks are present in the 2026-10-08 audit; their date of arrival and experimental provenance are not established by that observation.
 
 ## 1. Evidence and remaining confirmation
 
@@ -51,9 +34,7 @@ Root notebooks and their copies in `notebooks/original/` are byte-identical:
 - `PM_BG_+_AES_(works)_workshop.ipynb`:
   `6bf294a5388bb7f1a24f17640a788836d887572ec6a0c02d3b647e83289740ca`.
 
-Source of cells 0 and 1 agrees between these two notebooks. Cell 1 of `ori`
-(index 1, ID `7495Mw2mNX3t`) remains the selected archival reference, not an
-author-confirmed implementation for every manuscript experiment.
+Source of cells 0 and 1 agrees between these two notebooks. Cell 1 of `ori` (index 1, ID `7495Mw2mNX3t`) remains the selected archival reference, not an author-confirmed implementation for every manuscript experiment.
 
 Additional notebooks:
 
@@ -62,18 +43,11 @@ Additional notebooks:
 | `PM-BG + AES (works)_ori.ipynb`       | `237b00153efdb9f026581238936f502bf948e9b18614166887210a6750bde61f` | Source and saved outputs match root `ori`; execution metadata differs |
 | `PM-BG + AES (works).ipynb`           | `02c99ab93e873c7eb3431f05f8bb501d8740c1ab60f2931aba288ac996aefa85` | Different complete-graph/unimodular/Shift128/AES pipeline             |
 
-The additional `ori` has execution count 2 and execution metadata on cell 1;
-root `ori` has null execution counts despite saved outputs. This does not
-establish chronology or authorship.
+The additional `ori` has execution count 2 and execution metadata on cell 1; root `ori` has null execution counts despite saved outputs. This does not establish chronology or authorship.
 
-The canonical PM-BG family uses fixed row permutations and AES-256-CBC only
-on the residual tail. The other notebook uses `N = 2 * user_n`, complete-graph
-and unimodular matrices, Shift128 on residual bytes, then AES-128-CBC on the
-whole combined payload with deterministic parameter-derived key/IV.
-`shift128_encrypt` adds 128 modulo 256; `shift128_decrypt` subtracts 128 modulo 256. These implementations must not be conflated.
+The canonical PM-BG family uses fixed row permutations and AES-256-CBC only on the residual tail. The other notebook uses `N = 2 * user_n`, complete-graph and unimodular matrices, Shift128 on residual bytes, then AES-128-CBC on the whole combined payload with deterministic parameter-derived key/IV.
 
-Its saved decryption (104272 → 104267 bytes, 0.1824 s, throughput 0.55) is not
-the Table 3 run. No replacement scorer or missing-method imitation was built.
+Its saved decryption (104272 → 104267 bytes, 0.1824 s, throughput 0.55) is not the Table 3 run. No replacement scorer or missing-method imitation was built.
 
 ## 3. Tables 3 and 7
 
@@ -112,7 +86,7 @@ SHA-256: `9a2819b951992a79f2a06fa23c48b8baeacd0ba310a415ffd609027bd046d08a`.
 Sizes, selected matrix sizes, times, throughput, tabulated memory and overhead
 match Table 7. Supplied ciphertext sizes/headers and main permutation
 segments are consistent with the PM-BG implementation; entropy agrees with
-the TXT after four-decimal rounding. All original–decrypted pairs are equal.
+the TXT after four-decimal rounding. All nine original–decrypted pairs are equal.
 This does not independently authenticate the recorded timings or demonstrate
 that those recovered files were produced from these ciphertexts in the
 claimed original runs.
@@ -220,22 +194,22 @@ The existing candidate manifest does not list `results/analysis result/`.
 It is not a complete snapshot of the audited workspace, and was not rebuilt.
 `scripts/build_release.py` collects the entire `results/` tree without a
 per-artifact rights filter. Its assertion currently rejects collected
-DOCX/Zone.Identifier paths. Removing those paths alone could still package
-unapproved F1–F9. A reviewed inclusion policy and privacy/password review are
-required before rebuilding or distributing any candidate, including these
-documents and reported measurements.
+DOCX and `Zone.Identifier` paths. Removing those paths alone could still
+package unapproved F1–F9. A reviewed inclusion policy and privacy/password
+review are required before rebuilding or distributing any candidate,
+including these documents and reported measurements.
 
 The initial documentation update was limited to `docs/`. A subsequent wording
 cleanup updated README and its package-description copy using this evidence.
 The earlier local ZIP cleanup made wording-only substitutions in three
-documents, preserving its member list and other contents and updating its
-manifest/checksum. The parent-managed archive was also selectively updated
-for MIT wording; this docs-only change does not modify archives, root files,
-data, scripts, or metadata. These selective updates are not a full archive
-rebuild or synchronization with current documentation. It remains an older
-candidate without newly supplied F1..F9 data or reports. No release builder
-or publication was run for this docs-only update. MIT and these wording edits
-do not constitute permission to publish the supplied evidence.
+documents and revised checksums. The parent-managed archive was also
+selectively updated for MIT wording; this docs-only change does not modify
+archives, root files, data, scripts, or metadata. These selective updates
+are not a full archive rebuild or synchronization with current documentation.
+It remains an older candidate without newly supplied F1..F9 data or reports.
+No release builder or publication was run for this docs-only update. MIT
+and these wording edits do not constitute permission to publish the supplied
+evidence.
 
 ## 7. Validation and claim boundaries
 

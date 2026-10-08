@@ -1,0 +1,90 @@
+path,size_bytes,sha256,reason
+PM_BG_+_AES_(works)_ori.ipynb,35452,7c226d4fe3c9fa124c6dcc78564cb13138584ead112b1bc7e055cfeb580fb8b5,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+PM_BG_+_AES_(works)_workshop.ipynb,59269,6bf294a5388bb7f1a24f17640a788836d887572ec6a0c02d3b647e83289740ca,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+dist/pm-bg-aes-supplementary-v0.1.0.zip,6961504,ea995d1ec2e25409a869a6e4e0934e42d49d888608b71a2857116fe6090d82fb,excluded: superseded historical archive (git history retains it)
+notebooks/analyze_results.ipynb,310028,1bb6b55ab41a19aa275891ec080ebe145ac4d64b871d8105841822c6073cfbd4,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+notebooks/demo_colab.ipynb,27324,f7f78c74608da73324e6af54b89b646d17e0249bf12576b3e1b59e7ba5bc7ccc,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+notebooks/original/PM_BG_+_AES_(works)_ori.ipynb,35452,7c226d4fe3c9fa124c6dcc78564cb13138584ead112b1bc7e055cfeb580fb8b5,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+notebooks/original/PM_BG_+_AES_(works)_workshop.ipynb,59269,6bf294a5388bb7f1a24f17640a788836d887572ec6a0c02d3b647e83289740ca,excluded: raw/root notebook original (public sanitized copy in notebooks/public/)
+results/analysis result/1. [01.09.2026] Analisis Algoritma.docx:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/2. File TXT - Paper PM-BG + AES_ori.txt,21403,9a2819b951992a79f2a06fa23c48b8baeacd0ba310a415ffd609027bd046d08a,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/3. [01.09.2026] Analisis Keamanan Data.docx:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 1-MP4/F1 (1).mp4_encrypted_decrypted.mp4,19123560,6a4bde7ba88536058cf30e2522807b3626e4e7425bbfaca10ee81d90c15351b3,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 1-MP4/F1.mp4,19123560,6a4bde7ba88536058cf30e2522807b3626e4e7425bbfaca10ee81d90c15351b3,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 1-MP4/F1.mp4_encrypted,19123596,89b635aa43a158b83545c3dd651634783a52303d7c495dcf4e2383d2445f8143,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 2-MP3/F2 (1).mp3_encrypted_decrypted.mp3,3779324,52fe68e5104a70dd6024f4df5def96a0d67f8f0a00a508d53274aee3437235b8,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 2-MP3/F2.mp3,3779324,52fe68e5104a70dd6024f4df5def96a0d67f8f0a00a508d53274aee3437235b8,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 2-MP3/F2.mp3_encrypted,3779364,f2829ca586ecfe641611c41478ef78465dc1fbea95c951d530537767b66588a9,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 3-JPG/F3 (1).jpg_encrypted_decrypted.jpg,7019857,dd266621fb7f5ea7b036c2931c1aade0c6c0671eaf39cdd7cfb39908529c1124,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 3-JPG/F3.jpg,7019857,dd266621fb7f5ea7b036c2931c1aade0c6c0671eaf39cdd7cfb39908529c1124,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 3-JPG/F3.jpg_encrypted,7019900,ad8fae230cdc315fdcb1522aef50a166684884f28149c679d4cbe68088e901fd,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 4-PNG/F4 (1).png_encrypted_decrypted.png,12374057,e69fc9423cf2d1dd18c625db39c0982f74207e2291b4417d5cbf23b5c6fdab02,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 4-PNG/F4.png,12374057,e69fc9423cf2d1dd18c625db39c0982f74207e2291b4417d5cbf23b5c6fdab02,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 4-PNG/F4.png_encrypted,12374092,61b0e3a1755be30e70aa741c8802e884305ec332c7195ad66234fc924e72095d,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 5-PDF/F5 (1).pdf_encrypted_decrypted.pdf,3972474,118c475952e3edc5660b2e1aa480e1d1d0e9de86d1788db49df46242d623be2d,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 5-PDF/F5.pdf,3972474,118c475952e3edc5660b2e1aa480e1d1d0e9de86d1788db49df46242d623be2d,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 5-PDF/F5.pdf_encrypted,3972516,7684063aca73345be207145c6b25425eae2905ff098bb417e6cba3a9950c626f,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 6-MSI/F6 (1).msi_encrypted_decrypted,3652608,cf12d8239fc9e99d5c27933485a217b37fb3b0880aea726d22f9bf3e9e6aedd6,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 6-MSI/F6.msi,3652608,cf12d8239fc9e99d5c27933485a217b37fb3b0880aea726d22f9bf3e9e6aedd6,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 6-MSI/F6.msi:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 6-MSI/F6.msi_encrypted,3652652,4b686f7ff6c9982e0da1096b6fce1fbb5a436186ffab772837560607e698f3c6,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 7-ZIP/F7 (1).zip_encrypted_decrypted.zip,3750701,d657a832ab9df0aca257aa327bd48c4d8a4cacea6eb8f21e98eba46d22ee9710,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 7-ZIP/F7 (1).zip_encrypted_decrypted.zip:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 7-ZIP/F7.zip,3750701,d657a832ab9df0aca257aa327bd48c4d8a4cacea6eb8f21e98eba46d22ee9710,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 7-ZIP/F7.zip:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 7-ZIP/F7.zip_encrypted,3750740,ad88b87fe72afdbcf8819599ae6781eaeabfeca26480a9d82840cf653d7b3d92,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 8-TXT/F8 (1).txt_encrypted_decrypted,6061,151321af8aaef988f673baf45a70096b5200ed7ebd2a03c8b967e0f5eb2984cc,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 8-TXT/F8.txt,6061,151321af8aaef988f673baf45a70096b5200ed7ebd2a03c8b967e0f5eb2984cc,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 8-TXT/F8.txt_encrypted,6104,badb70a768d60ade37ce6ca6d0589f591aeeb204cc44218d63d7ed04ee8281db,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 9-EXE/F9 (1).exe_encrypted_decrypted,5423488,f1493eac2d8e4634a5c74427966b4e29ad7ebb432ff162bb4ed460cf5f8e0088,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 9-EXE/F9.exe,5423488,f1493eac2d8e4634a5c74427966b4e29ad7ebb432ff162bb4ed460cf5f8e0088,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 9-EXE/F9.exe:Zone.Identifier,26,eacd09517ce90d34ba562171d15ac40d302f0e691b439f91be1b6406e25f5913,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File 9-EXE/F9.exe_encrypted,5423532,4befe6380867c9911ed219579b69a79a0ee551e40e4856c4cbafc68b4021f526,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/File TXT - Paper PM-BG + AES_ori.md,21403,9a2819b951992a79f2a06fa23c48b8baeacd0ba310a415ffd609027bd046d08a,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/PM-BG + AES (works).ipynb,24974,02c99ab93e873c7eb3431f05f8bb501d8740c1ab60f2931aba288ac996aefa85,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/analysis result/PM-BG + AES (works)_ori.ipynb,26920,237b00153efdb9f026581238936f502bf948e9b18614166887210a6750bde61f,"excluded: entire historical research tree (F1..F9 payloads, reports, notebooks, UCEF)"
+results/runs/20261007T042845Z/EXECUTION_REPORT.md,1916,97a2eb6c26daf3da0b6ffc7525755055b60d1952dc8b98b9790cebe713a9a15b,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_elapsed.png,46026,cb4bba6b785f66e6f73e63494a03b8ca57ec30ca45608f8d605b9473999f1dcd,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_elapsed.svg,45918,48421851f0349930b95c1932ca6218146e0465bd16961a54dc24c3f31bc1c4e4,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_entropy.png,42327,f8dfff76916a30ea0f24bd216caaaee7868015182e90241f8c075c570337636c,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_entropy.svg,45219,87a672b156a033b2277ac7fd6e07c9f695fd529750d05e6f93656d6e36c8fdc3,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_hist_DEMO-005.png,43135,03135361f4544bd3f9bdb3478286d3bc6748011fb2d8492197b9721a00bc6e65,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_hist_DEMO-005.svg,137156,ba838c3ce855cfb5a93e09529e5dc6ed324157c79998801825ed9f327109655d,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_scatter_DEMO-004.png,48072,bf44064938a70d5bbb08a048500b2230ac5a9ecc01de87d6b5b0de90a5c7bde6,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_scatter_DEMO-004.svg,1207804,6c292a6cb3e54c2222c372d43a61cfd9fbb5af6e0878ca6df8683c1fb4c53cc5,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_throughput.png,49049,1ce69f9d4d89531e660b611fc440b1fe64f2faa2e644581c31e1e31531661980,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/demo_throughput.svg,43810,323286c0901ee8fb15790daa168b230712aaaed9a1e8aff6ef31e4e5f86626b3,excluded: non-designated historical run
+results/runs/20261007T042845Z/figures/figure_manifest.csv,3747,8a049114c3542e4c80ae6c15915ad582f6a924e7fb9bd4f7b4d27679f519e300,excluded: non-designated historical run
+results/runs/20261007T042845Z/logs/experiment.log,1854,fdc26d85865caeff6cd7e8c5db4add64ccc5bf26b283dddc57b165e93623fbb1,excluded: non-designated historical run
+results/runs/20261007T042845Z/logs/test_report.txt,490,f2e8542c2cb65818beab487121d33ac47bd354e0ee7ff5731b62927d5bbea5b0,excluded: non-designated historical run
+results/runs/20261007T042845Z/raw/benchmark_runs.csv,49493,19e763155987aa30dcad6a0a9a94518f08f64891c6eb542c64bf61d257c43bb8,excluded: non-designated historical run
+results/runs/20261007T042845Z/raw/environment.json,1031,3055843340656256eaaacdccbddc92daf1161ce00d3ee216ff0756bacbc207d7,excluded: non-designated historical run
+results/runs/20261007T042845Z/raw/integrity_checks.csv,3002,412e2aede35e48e24151823ec47c2ffd8523aec235ccddb248f8f1cd75e7600c,excluded: non-designated historical run
+results/runs/20261007T042845Z/raw/run_config.json,380,90a0024818a28e938e08fcb997f3042cbc17e75d7dfe9b0ec8deeb6d37c8b5f4,excluded: non-designated historical run
+results/runs/20261007T042845Z/summary/integrity_summary.csv,1940,bdbffe3e393d00b3e8549b2e359056afa1273a943248910134e0f5f054c4ad79,excluded: non-designated historical run
+results/runs/20261007T042845Z/summary/performance_summary.csv,5376,20cf98d71657d52e7f9dc2d7d116dff5463c8efbd22ebeed3904f5c7613c21e4,excluded: non-designated historical run
+results/runs/smoke01/EXECUTION_REPORT.md,1908,eeec1a7f97e04bccc6e8db0b432bbaac3e86708fd6dfbd43f5c6b6e64eadf4b8,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_elapsed.png,46796,7e7b3a8b3b860d4801471554e5aa5411c9941125d324b46e9fd84b2a1552b17d,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_elapsed.svg,46225,3d241425264dd157d12fd6121c101ef2de6cb8672faa91b80e8d742f2d4539bd,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_entropy.png,42328,69c353fb55f1a7adaeb736b1601b1ea56f83854816bc2dac24bda84737c51209,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_entropy.svg,45221,efacd17686aedb61d31f9941a79ccad73138651fc38eedc27d9a776b631f5d10,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_hist_DEMO-005.png,43131,5357be78dab9fe60468557f05bf8a545198d85ef02fa28b33da1bde7fd78230d,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_hist_DEMO-005.svg,137156,a64be9fa469bd99a6437679576ad31af8ef852e2508618c8e669b9892bce9bb0,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_scatter_DEMO-004.png,45224,11b73d90e641f79200d596d5512f99fc99a53a7194ac521ed52b99b18ef34c98,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_scatter_DEMO-004.svg,1205742,e99bddca2ac4d791886d0ba0c1feae2aae0af497be4789b09444e3ffa2559e3f,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_throughput.png,50061,2359e6b03d245a2b67b8c02376cad6abea22234b69e952e6f5af86b9da589faf,excluded: non-designated historical run
+results/runs/smoke01/figures/demo_throughput.svg,44255,52f98bfb2f757e91afeab7cae6679afff640ac13105067141e67065e75393b73,excluded: non-designated historical run
+results/runs/smoke01/figures/figure_manifest.csv,3747,8a049114c3542e4c80ae6c15915ad582f6a924e7fb9bd4f7b4d27679f519e300,excluded: non-designated historical run
+results/runs/smoke01/logs/experiment.log,1827,ee82b1bdf2b42077b74ea342f303764ddf2a225b3fca1c6518ffb6e6f2cc7ec5,excluded: non-designated historical run
+results/runs/smoke01/logs/test_report.txt,490,7ca4aeebbc0796b5d586848828d69d8d888ba3fbaf7f5bd4da130829d3977371,excluded: non-designated historical run
+results/runs/smoke01/raw/benchmark_runs.csv,48115,643b65e8d8e9b90c0a86236073e2be0217b6ad9ba5d71872cae1fa71042e4bac,excluded: non-designated historical run
+results/runs/smoke01/raw/environment.json,1031,05db4e3c6611fa5c795d4c8e6d2b67b7077dcc867e9230d70766e7064e0f1855,excluded: non-designated historical run
+results/runs/smoke01/raw/integrity_checks.csv,2903,d636ee53acba06eedf9d297c49921ffb936a3060369ab8f88e4cbe60e0eb9c7c,excluded: non-designated historical run
+results/runs/smoke01/raw/run_config.json,371,cc51ae284c6072c02e96c7f749fd04f85735daee3624740708ced8d08e9869c3,excluded: non-designated historical run
+results/runs/smoke01/summary/integrity_summary.csv,1841,ff02b0648ae7655969872edeb6d0b26cf4b8bd1c09b88ff01eedf3b146b44c60,excluded: non-designated historical run
+results/runs/smoke01/summary/performance_summary.csv,5182,5ba0a0f95a34f97b825cd1dd93cb3beba510ca1593ebc088b3381e2bd6c9ce09,excluded: non-designated historical run
+src/pm_bg_aes.egg-info/PKG-INFO,4821,64962c046d30ee28c3768ef722594c3a06222d513485157ce6df288a2aebd37a,excluded: tracked build artifact
+src/pm_bg_aes.egg-info/SOURCES.txt,675,5ab1e0589eb83805e122e5261136848f5e07a42379b6fb61f8f6f90c6a026016,excluded: tracked build artifact
+src/pm_bg_aes.egg-info/dependency_links.txt,1,01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b,excluded: tracked build artifact
+src/pm_bg_aes.egg-info/requires.txt,119,7d8c7b28e6f2e6345d20e78cbe6ef05ead49b733e6c7689278343d0167aaaf6b,excluded: tracked build artifact
+src/pm_bg_aes.egg-info/top_level.txt,10,01878d2b1958571862abf3fadb2946b5b9215d7d70b42aff4bc55bca16228cb2,excluded: tracked build artifact

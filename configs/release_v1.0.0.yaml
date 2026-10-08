@@ -1,0 +1,42 @@
+# Maintainer Dwi approved this public demo scope on 2026-10-08.
+# Hard-coded builder ceilings and denials cannot be widened by this file.
+version: "1.0.0"
+run_id: "v1.0.0-demo-20261008T020017Z"
+demo_manifest: data/manifest.csv
+public_artifact_review: docs/public_artifact_review.csv
+# Preserve existing README/docs/figure links; mirrors must match selected run.
+include_latest: true
+include_files:
+  - LICENSE
+  - README.md
+  - CITATION.cff
+  - .zenodo.json
+  - CHANGELOG.md
+  - pyproject.toml
+  - requirements.txt
+  - requirements-lock.txt
+  - .gitignore
+  - data/README.md
+  - data/manifest.csv
+  - docs/public_artifact_review.csv
+  - notebooks/public/PM_BG_+_AES_(works)_ori.ipynb
+  - notebooks/public/PM_BG_+_AES_(works)_workshop.ipynb
+  - notebooks/public/demo_colab.ipynb
+  - notebooks/public/analyze_results.ipynb
+  - results/README.md
+  - results/.run_id
+  - results/runs/v1.0.0-demo-20261008T020017Z/EXECUTION_REPORT.md
+include_trees:
+  - src
+  - tests
+  - scripts
+  - configs
+  - docs
+  - results/runs/v1.0.0-demo-20261008T020017Z/raw
+  - results/runs/v1.0.0-demo-20261008T020017Z/summary
+  - results/runs/v1.0.0-demo-20261008T020017Z/figures
+  - results/runs/v1.0.0-demo-20261008T020017Z/logs
+  - results/raw
+  - results/summary
+  - results/figures
+  - results/logs

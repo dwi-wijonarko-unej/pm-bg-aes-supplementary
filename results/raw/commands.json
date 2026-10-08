@@ -1,0 +1,167 @@
+[
+  {
+    "step": "git provenance",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "--no-pager",
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:36.299870+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T03:11:36.301796+00:00"
+  },
+  {
+    "step": "git provenance",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "--no-pager",
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:36.301809+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T03:11:36.304497+00:00"
+  },
+  {
+    "step": "git provenance",
+    "argv": [
+      "git",
+      "--no-optional-locks",
+      "--no-pager",
+      "diff",
+      "--binary",
+      "HEAD",
+      "--"
+    ],
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:36.304511+00:00",
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-08T03:11:36.312225+00:00"
+  },
+  {
+    "step": "test_report",
+    "argv": [
+      "/usr/sbin/python",
+      "-m",
+      "pytest",
+      "tests/",
+      "-q"
+    ],
+    "command": "/usr/sbin/python -m pytest tests/ -q",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:36.657338+00:00",
+    "exit_code": 0,
+    "log_path": "logs/test_report.txt",
+    "finished_at_utc": "2026-10-08T03:11:42.713921+00:00"
+  },
+  {
+    "step": "experiments",
+    "argv": [
+      "/usr/sbin/python",
+      "scripts/run_experiments.py",
+      "--config",
+      "configs/demo.yaml",
+      "--run-dir",
+      "results/runs/v1.0.0-demo-20261008T020017Z",
+      "--run-id",
+      "v1.0.0-demo-20261008T020017Z"
+    ],
+    "command": "/usr/sbin/python scripts/run_experiments.py --config configs/demo.yaml --run-dir results/runs/v1.0.0-demo-20261008T020017Z --run-id v1.0.0-demo-20261008T020017Z",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:42.715086+00:00",
+    "exit_code": 0,
+    "log_path": "logs/experiments.txt",
+    "finished_at_utc": "2026-10-08T03:11:50.634299+00:00"
+  },
+  {
+    "step": "summarize",
+    "argv": [
+      "/usr/sbin/python",
+      "scripts/summarize_results.py",
+      "--run-dir",
+      "results/runs/v1.0.0-demo-20261008T020017Z"
+    ],
+    "command": "/usr/sbin/python scripts/summarize_results.py --run-dir results/runs/v1.0.0-demo-20261008T020017Z",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:50.634987+00:00",
+    "exit_code": 0,
+    "log_path": "logs/summarize.txt",
+    "finished_at_utc": "2026-10-08T03:11:50.697813+00:00"
+  },
+  {
+    "step": "figures",
+    "argv": [
+      "/usr/sbin/python",
+      "scripts/generate_figures.py",
+      "--run-dir",
+      "results/runs/v1.0.0-demo-20261008T020017Z",
+      "--demo-dir",
+      "data/demo"
+    ],
+    "command": "/usr/sbin/python scripts/generate_figures.py --run-dir results/runs/v1.0.0-demo-20261008T020017Z --demo-dir data/demo",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:50.698288+00:00",
+    "exit_code": 0,
+    "log_path": "logs/figures.txt",
+    "finished_at_utc": "2026-10-08T03:11:53.025153+00:00"
+  },
+  {
+    "step": "cli_encrypt",
+    "argv": [
+      "/usr/sbin/python",
+      "-m",
+      "pm_bg_aes.cli",
+      "encrypt",
+      "data/demo/demo_002_tiny.bin",
+      "-o",
+      "results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.enc"
+    ],
+    "command": "/usr/sbin/python -m pm_bg_aes.cli encrypt data/demo/demo_002_tiny.bin -o results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.enc",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:53.026748+00:00",
+    "exit_code": 0,
+    "log_path": "logs/cli_encrypt.txt",
+    "finished_at_utc": "2026-10-08T03:11:53.195732+00:00"
+  },
+  {
+    "step": "cli_decrypt",
+    "argv": [
+      "/usr/sbin/python",
+      "-m",
+      "pm_bg_aes.cli",
+      "decrypt",
+      "results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.enc",
+      "-o",
+      "results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.dec"
+    ],
+    "command": "/usr/sbin/python -m pm_bg_aes.cli decrypt results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.enc -o results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.dec",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:53.197468+00:00",
+    "exit_code": 0,
+    "log_path": "logs/cli_decrypt.txt",
+    "finished_at_utc": "2026-10-08T03:11:53.388848+00:00"
+  },
+  {
+    "step": "cli_verify",
+    "argv": [
+      "/usr/sbin/python",
+      "-m",
+      "pm_bg_aes.cli",
+      "verify",
+      "data/demo/demo_002_tiny.bin",
+      "results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.dec"
+    ],
+    "command": "/usr/sbin/python -m pm_bg_aes.cli verify data/demo/demo_002_tiny.bin results/runs/v1.0.0-demo-20261008T020017Z/scratch/smoke/tiny.dec",
+    "cwd": ".",
+    "started_at_utc": "2026-10-08T03:11:53.389762+00:00",
+    "exit_code": 0,
+    "log_path": "logs/cli_verify.txt",
+    "finished_at_utc": "2026-10-08T03:11:53.550770+00:00"
+  }
+]

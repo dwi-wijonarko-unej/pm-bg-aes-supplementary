@@ -1,0 +1,15 @@
+{
+  "run_id": "v1.0.0-demo-20261008T020017Z",
+  "source_sha256": {
+    "raw/benchmark_runs.csv": "d67279985971635f7f4eecd454e0900d8beeadcd47710ad44ca6f5618a61a0b6",
+    "raw/integrity_checks.csv": "b98c0bc4ad50c9ff0ce5a29118c949c1696e1e27e43bc30f3b8f727da998f4eb"
+  },
+  "output_sha256": {
+    "summary/performance_summary.csv": "05d04e28de82f520c3cbb21f4ee82743d01923d8c15ff65c74e6cbb1dd4e91df",
+    "summary/integrity_summary.csv": "4308195f966fb25c62d79ecc926f96f33f88cbaf1fef6bb68cb0e5a1f8f0c250"
+  },
+  "filter": "local-structured; warmup=false; status=ok",
+  "expected_measured_repetitions": 5,
+  "statistics": "arithmetic mean, median, sample stdev (n>=2), min, max",
+  "validation": "complete plan; all reference and measured decrypt byte/hash matches"
+}

@@ -1,0 +1,3 @@
+encrypted n=6 len_hill=36 in=37 out=80
+
+[demo] using PM_BG_AES_DEMO_PASSWORD (demonstration-only, not a secret)

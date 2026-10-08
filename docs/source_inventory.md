@@ -9,7 +9,30 @@
 > A/B describe supplied artifacts, not independently authenticated original-run
 > provenance. The 2026-10-08 update is documented in `docs/evidence_audit.md`.
 
-## 1. Initial workspace inventory (2026-10-07; updated 2026-10-08)
+## Current v1.0.0 scope and historical-path convention
+
+Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08.
+The conservative code/docs/synthetic demo scope and existing nine metadata
+names/order are adopted; roles remain unspecified. F1..F9 payloads, all
+`results/analysis result/`, DOCX materials and root/raw notebooks are excluded.
+Paths and hashes below describe earlier inspected private evidence, not files
+shipped as runnable inputs in the public candidate. No historical hash is
+reassigned to a sanitized file.
+
+Public copies are `notebooks/public/PM_BG_+_AES_(works)_ori.ipynb`,
+`PM_BG_+_AES_(works)_workshop.ipynb`, `demo_colab.ipynb` and
+`analyze_results.ipynb`: cell source unchanged, outputs/metadata stripped.
+They are not checksum-identical full-file originals. See
+[notebook preservation/redaction](notebook_preservation_and_redaction.md) and
+[public artifact review](public_artifact_review.csv).
+
+The earlier audit's untracked finding describes that earlier state. Research
+materials were later tracked in the supplied public Git baseline; deletion
+from a new snapshot does not erase prior history. The designated new demo run
+is `v1.0.0-demo-20261008T020017Z`; its own report/logs establish validation.
+Local candidate prepared; publication performed by maintainer after candidate validation.
+
+## 1. Historical workspace inventory (2026-10-07; audited 2026-10-08)
 
 | File in workspace root                  | SHA-256                                                            | Size       | Role                                                                               |
 | --------------------------------------- | ------------------------------------------------------------------ | ---------- | ---------------------------------------------------------------------------------- |
@@ -18,11 +41,11 @@
 | `PM_BG_+_AES_(works)_workshop.ipynb`    | `6bf294a5388bb7f1a24f17640a788836d887572ec6a0c02d3b647e83289740ca` | 57.9 KiB   | Source notebook, 3 code cells (category A)                                         |
 | `*.Zone.Identifier` (×2)                | —                                                                  | 25 B       | Windows attachment metadata, not a source                                          |
 
-The initial inspection found no F1..F9 inputs. The 2026-10-08 audit now finds
+The initial inspection found no F1..F9 inputs. The earlier 2026-10-08 audit found
 nine original/encrypted/decrypted triplets, two additional notebooks, a TXT/MD
 benchmark report and two UCEF DOCX reports under `results/analysis result/`.
 Their arrival date and original-run provenance are not established. Full
-F1..F9 sizes/checksums and pending rights are in `docs/dataset_evidence.csv`;
+F1..F9 historical sizes/checksums and confirmed exclusion are in `docs/dataset_evidence.csv`;
 notebook/report identities and findings are in `docs/evidence_audit.md`.
 `FileAttachment.pdf_encrypted` and the `COMNET-S-26-08200.pdf` input remain
 unavailable. UCEF reports are available, but the evaluation tool is not.
@@ -75,12 +98,12 @@ Reasons:
 
 This is a **canonical archival implementation selected from the supplied
 notebook**, not a "verified manuscript implementation". F1..F9 artifacts and
-matching Table 7 logs are now available, but do not prove which cell/version
+matching Table 7 logs were inspected as private evidence, but do not prove which cell/version
 produced the recorded timings. Author confirmation is still required (see
 `docs/author_questions.md` Q1 and Q11). The additional Shift128 notebook is a
 different implementation family, not covered by this canonical selection.
 
-## 4. Supplied saved outputs (category B; provenance pending)
+## 4. Historical saved outputs (category B; excluded; provenance unconfirmed)
 
 - **ori cell 1**: a decryption run. Input `FileAttachment.pdf_encrypted` (104300 bytes,
   entropy 7.3843) → output 104267 bytes (entropy 7.3840), elapsed 0.0070 s,
@@ -93,7 +116,7 @@ different implementation family, not covered by this canonical selection.
   identity (expected: swaps occur at rows 12–15 for n=24, outside the shown
   window). Input file **not in workspace**.
 
-## 5. Manuscript draft (read-only reference)
+## 5. Historical manuscript draft (excluded private reference)
 
 `Draft Paper PM_BG_AES 12Sept2026.docx` — 180 paragraphs, 9 tables, ~47 k
 characters of text. Title: _Graph-Based Permutation Matrix Generation and
@@ -136,26 +159,23 @@ as manuscript figures).
   Its relationship to Figure 7 and the evaluated residual remains unclear.
 - Table 7 matches the TXT/MD report. Repetitions, original environment,
   experimenter's version mapping and input provenance remain unconfirmed.
-- UCEF code-analysis v1.0 and data-analysis v3.0 reports are available.
+- UCEF code-analysis v1.0 and data-analysis v3.0 reports were inspected and
+  are excluded private evidence.
   Tool source/binary, configuration, run input hashes and standalone exports
   have not been located. Several whole-file F9 statistics differ from the
   report; sampling/segment/preprocessing definitions are required.
 - `FileAttachment.pdf_encrypted` and `COMNET-S-26-08200.pdf` remain missing.
 - Tables 8–9 calculation code, numerical derivations and rate assumptions
   remain unconfirmed; OMML extraction alone cannot resolve these questions.
-- MIT license choice was confirmed by the repository maintainer/user on
-  2026-10-08: "Lisensi kami gunakan MIT". It covers repository-owned code,
-  documentation, and synthetic demo data, not verified approval from all
-  authors or automatic rights to third-party F1..F9, the manuscript, or UCEF/
-  supplied reports. Earlier pending-license findings are historical and
-  superseded. Per-artifact ownership/redistribution, provenance, software
-  contributors, and release approval remain pending. See
-  `docs/evidence_audit.md` and author questions Q6/Q9.
+- MIT license choice was confirmed by the maintainer on 2026-10-08 and is
+  retained in the adopted team scope for repository-owned code/docs/synthetic
+  demo data. The accepted holder remains PM-BG-AES contributors. No independent
+  third-party rights or original-run attribution are inferred. Source/rights
+  holders and affirmative redistribution terms for excluded materials remain
+  not documented. See `docs/release_approval.md` and author questions Q6/Q9.
 
-The initial docs-only revision did not update README or the local candidate.
-A subsequent wording cleanup updated README and its package-description copy;
-the ZIP received three wording-only document patches and revised checksums.
-The parent-managed archive was also selectively updated for MIT wording,
-not fully rebuilt with current evidence or all current docs. Archive/metadata
-changes are outside this docs-only update. This inventory describes the
-workspace, not the candidate's contents. See `docs/evidence_audit.md`.
+Earlier local ZIPs received selective wording/license patches; that is historical
+context, not the current candidate state. The v1.0.0 archive must be freshly
+prepared from the reviewed sanitized snapshot, with no claim of publication,
+release date or DOI until the maintainer publishes after validation. This
+inventory retains evidence identity, not an inclusion list for private payloads.

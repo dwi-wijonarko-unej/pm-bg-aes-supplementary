@@ -1,155 +1,89 @@
-# Draft jawaban provenance dan distribusi dataset untuk tim
+# Team decision record — conservative v1.0.0 scope
 
-Tanggal penyusunan: 2026-10-08.
-Status: **usulan berbasis audit repository, untuk dibahas oleh tim; bukan
-persetujuan pelaksana eksperimen atau pemegang hak**.
+Team approval reported/confirmed by repository maintainer Dwi Wijonarko on 2026-10-08.
 
-Pengelola repository meminta penyusunan jawaban dan perubahan dokumentasi
-untuk pembahasan tim. Mandat tersebut mengizinkan penyusunan draft, bukan
-pembuktian asal eksperimen atau pemberian izin atas materi pihak ketiga.
-Lisensi MIT sudah dikonfirmasi pengelola untuk materi milik repository.
+Tanggal: 2026-10-08. Nama file dipertahankan untuk kesinambungan tautan;
+statusnya sekarang **catatan keputusan**, bukan usulan yang masih menunggu tim.
+Sumber konfirmasi adalah instruksi pengelola Dwi Wijonarko pada tugas ini:
+**"Tim sudah setuju semua, tinggal konfirmasi di dokumen."** Tidak ada tanda
+tangan individu, izin pihak ketiga, atau provenance historis baru yang diklaim.
 
-Sumber bukti: [laporan audit](evidence_audit.md),
-[identitas dataset](dataset_evidence.csv),
-[pemetaan naskah–artefak](manuscript_artifact_mapping.csv), dan
-[lembar keputusan distribusi](dataset_distribution_review.csv).
-Path artefak dalam dokumen ini relatif terhadap root repository.
+## 1. Riwayat dan keputusan yang diadopsi
 
-## 1. Jawaban provenance yang saya rekomendasikan
+Dokumen sebelumnya adalah draft berbasis audit untuk pembahasan tim. Draft
+mengusulkan rilis konservatif: kode/dokumentasi milik repository, demo sintetis,
+hasil demo baru yang berlabel jelas, dan metadata bukti yang ditinjau, dengan
+pengecualian seluruh bahan penelitian yang hak distribusinya belum diketahui.
+Pengelola kini melaporkan persetujuan tim atas cakupan tersebut. Status
+"belum diadopsi tim" pada draft sebelumnya telah digantikan oleh catatan ini.
 
-> Repository memuat implementasi yang diarsipkan dari notebook yang tersedia,
-> bahan pendukung eksperimen, dan hasil demonstrasi baru yang dipisahkan secara
-> eksplisit. Angka Table 3 cocok dengan output dekripsi tersimpan pada notebook
-> `ori` sel 1. Seluruh sembilan baris Table 7 cocok dengan laporan benchmark
-> TXT/MD yang disertakan. File berlabel F1–F9, ciphertext, dan hasil decrypted
-> tersedia lokal; sembilan pasangan original–decrypted identik, dan ukuran,
-> header, serta segmen permutasi konsisten dengan implementasi PM-BG.
->
-> Dengan demikian, keterlacakan numerik dan konsistensi artefak telah
-> diperiksa. Bukti tersebut mendukung penggunaan file sebagai **bahan
-> pendukung hasil yang dilaporkan**, tetapi belum mengautentikasi run historis
-> yang menghasilkan waktu eksekusi. Identitas pelaksana, tanggal run,
-> notebook/sel/commit yang dijalankan, perangkat keras, versi dependensi,
-> jumlah pengulangan, dan aturan agregasi angka belum terkonfirmasi.
-> Hasil demo baru bukan pengganti bukti eksperimen asli.
+MIT berlaku untuk kode, dokumentasi, dan demo sintetis milik repository.
+Pemegang copyright tetap **PM-BG-AES contributors**. Sembilan nama metadata
+beserta urutannya dikonfirmasi sesuai [catatan persetujuan](release_approval.md);
+peran kontribusi tertentu tidak ditetapkan.
 
-**Status yang dipakai:** konsistensi artefak terverifikasi; atribusi run asli
-belum terkonfirmasi. Jangan menyederhanakannya menjadi "provenance tidak ada"
-atau "seluruh hasil paper telah direproduksi".
+## 2. Cakupan awal yang disetujui
 
-| Item | Jawaban berdasarkan bukti | Batas yang harus tetap dicatat |
-|---|---|---|
-| Implementasi PM-BG | Sel 1 `PM_BG_+_AES_(works)_ori.ipynb` dipilih sebagai referensi arsip; source sel tersebut sama dengan sel 1 workshop; salinan `notebooks/original/` identik dengan root | Pemilihan referensi arsip bukan konfirmasi versi seluruh eksperimen |
-| Table 3 | Output tersimpan cocok: 0.0070 s, 14.27 MiB/s, 1125.57 KB, 99.9%, 104300 → 104267 byte | File input `FileAttachment.pdf_encrypted` belum ditemukan; belum ada rerun benchmark asli |
-| Table 7 | Sembilan baris cocok dengan `results/analysis result/2. File TXT - Paper PM-BG + AES_ori.txt`; salinan MD identik | Laporan tersimpan tidak membuktikan environment, jumlah run, atau proses agregasi |
-| F1–F9 | Ukuran/hash dicatat; 9/9 original–decrypted sama; struktur/segmen utama ciphertext konsisten | Identitasnya sebagai input run historis perlu konfirmasi pelaksana; integritas tidak membuktikan hak distribusi |
-| UCEF | Laporan v1.0 dan v3.0 tersedia; skor 60.00/100 mempunyai bukti laporan | Tool/config/input-run hash dan ekspor mandiri belum tersedia; sebagian statistik F9 berbeda dari hitungan full-file |
-| Shift128 | Implementasi ±128 mod 256 ditemukan pada notebook graph/unimodular/AES seluruh payload | Bukan pipeline PM-BG/AES-tail; kaitan dengan Figure 7 dan definisi residual belum jelas |
-| Hasil demo | DEMO-001..011, konfigurasi, pengukuran berulang, dan lingkungan run tersedia | Merupakan eksekusi lokal baru, bukan hasil run historis penelitian |
+| Materi                                                                                      | Keputusan                                                                         |
+| ------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Kode dan dokumentasi milik repository                                                       | Sertakan dengan MIT                                                               |
+| DEMO-001..DEMO-011                                                                          | Sertakan sebagai input sintetis, bukan F1..F9                                     |
+| Benchmark/figur demo baru                                                                   | Sertakan dengan provenance run baru dan ID `demo-*`                               |
+| Notebook publik                                                                             | Salinan `notebooks/public/`, source sel tidak diubah; output/metadata dibersihkan |
+| Ringkasan audit dan hash historis yang ditinjau                                             | Sertakan sebagai catatan bukti privat yang dikecualikan                           |
+| Triplet original/encrypted/decrypted F1..F9                                                 | Kecualikan seluruhnya dari rilis publik awal                                      |
+| Seluruh `results/analysis result/`                                                          | Kecualikan termasuk TXT/MD, log tersalin, notebook tambahan dan UCEF              |
+| DOCX manuskrip/laporan, notebook root/raw, artefak hasil/distribusi lama, egg-info terlacak | Kecualikan dari snapshot kandidat                                                 |
+| `.git/`, attachment metadata, secrets, konten privat                                        | Tidak dimasukkan dalam paket publik                                               |
 
-Nama file, label `ori`, tanggal pada judul laporan, execution count, atau waktu
-modifikasi file tidak cukup untuk menetapkan tanggal eksperimen dan pelaksana.
-Tidak ada data tersebut yang ditafsirkan sebagai persetujuan tertulis.
+Notebook publik bukan salinan full-file dengan checksum identik. Hash notebook
+awal pada [inventaris](source_inventory.md) mengidentifikasi original privat,
+bukan file publik yang dibersihkan. Lihat
+[preservasi dan redaksi](notebook_preservation_and_redaction.md) dan
+[review artefak publik](public_artifact_review.csv).
 
-## 2. Jawaban izin distribusi yang saya rekomendasikan
+## 3. Jawaban provenance yang tetap berlaku
 
-> Materi milik repository berupa kode, dokumentasi, dan data demo sintetis
-> menggunakan MIT. Untuk F1–F9, sumber perolehan, pemilik hak, syarat lisensi,
-> dan izin distribusi belum terdokumentasi. Karena itu, saya mengusulkan agar
-> file asli, ciphertext, dan hasil decrypted F1–F9 **tidak dimasukkan ke rilis
-> publik awal**. Seluruh `results/analysis result/` juga diusulkan dikecualikan
-> sementara, termasuk laporan, log tersalin, dan notebook tambahan, sampai
-> review per artefak selesai.
->
-> Keputusan ini adalah cakupan rilis yang direkomendasikan, bukan klaim bahwa
-> pemegang hak melarang distribusi. Identitas file, ukuran, checksum, dan
-> ringkasan keterlacakan dapat dipertimbangkan untuk publikasi setelah review
-> privasi dan persetujuan cakupan. Jika tim kemudian menyediakan bukti hak,
-> hanya file yang disetujui secara spesifik yang ditambahkan dengan lisensi
-> atau ketentuan distribusi yang sesuai.
+**Konsistensi artefak terverifikasi; atribusi run historis belum terkonfirmasi.**
+Audit sebelumnya mencocokkan Table 3 dengan stdout notebook tersimpan dan
+sembilan baris Table 7 dengan laporan TXT/MD. Sembilan pasangan
+original–decrypted memiliki hash identik; struktur/segmen permutasi konsisten.
+Ini tidak mengautentikasi waktu eksekusi atau membuktikan run historis.
 
-Enkripsi tidak menghilangkan kewajiban hak cipta atau kerahasiaan. File
-berformat TXT/JPG/MP4 pun tidak otomatis bebas distribusi; EXE/MSI/ZIP tidak
-otomatis dilarang hanya karena formatnya. Semua F1–F9 diperlakukan sama sampai
-sumber dan haknya diketahui. EXE/MSI tidak perlu dijalankan untuk review ini.
+Operator, tanggal, versi notebook/sel/commit, perangkat keras, dependensi,
+jumlah pengulangan dan agregasi run asli masih belum terkonfirmasi. Input
+Table 3 dan COMNET belum ditemukan. Tool/config UCEF belum tersedia; statistik
+full-file F9 berbeda dari sebagian nilai laporan. Shift128 berasal dari
+pipeline berbeda; hubungan Figure 7 dan definisi residual masih belum jelas.
+Batas ilmiah ini diterima untuk rilis konservatif, bukan dinyatakan terselesaikan.
 
-### Usulan cakupan rilis awal (belum diadopsi tim)
+## 4. Keputusan distribusi bukan izin redistribusi
 
-| Materi | Rekomendasi | Syarat sebelum benar-benar dipublikasikan |
-|---|---|---|
-| Kode dan dokumentasi milik repository | Sertakan, MIT | Review hak kode/notebook, privacy, dan persetujuan rilis |
-| DEMO-001..011 | Sertakan, MIT | Verifikasi manifest dan pertahankan label sintetis |
-| Hasil benchmark/figur demo baru | Sertakan, label demo | Periksa provenance lokal dan bebas informasi privat; jangan relabel menjadi figur asli paper |
-| Metadata F1–F9 dan ringkasan audit | Sertakan hanya yang lolos review | Nilai apakah nama/hash/ukuran/ringkasan boleh diketahui publik |
-| File original/encrypted/decrypted F1–F9 | Kecualikan sementara | Bukti kepemilikan atau lisensi pihak ketiga dan izin per file |
-| Isi `results/analysis result/`, termasuk TXT/MD, notebook tambahan, dan laporan UCEF | Kecualikan sementara sebagai satu folder | Perizinan per artefak dan review password/data privat; bila nanti diizinkan, gunakan daftar inklusi eksplisit |
-| Manuskrip DOCX, attachment metadata, secrets | Jangan sertakan dalam rilis awal | Naskah hanya dapat dipertimbangkan terpisah dengan izin yang relevan; secrets tidak dipublikasikan |
+[Register distribusi](dataset_distribution_review.csv) mencatat keputusan
+F1..F9 sebagai `exclude from initial public release; confirmed by maintainer`.
+Bukti keputusannya adalah `maintainer-reported team approval for conservative release scope`.
+Sumber/pemegang hak tetap belum terdokumentasi. Persetujuan pengecualian bukan
+izin afirmatif untuk mendistribusikan original, ciphertext atau decrypted.
+Enkripsi tidak menghapus hak cipta atau kerahasiaan. Tidak ada janji
+"available upon request" tanpa prosedur yang benar-benar disetujui.
 
-**Belum diterapkan pada builder.** `scripts/build_release.py` masih menelusuri
-seluruh `results/` tanpa per-file rights gate. Dokumen ini tidak mengubah
-perilaku kode dan tidak membuat archive/publication baru. Rekomendasi perlu
-diadopsi tim dan diterapkan sebagai filter/allowlist sebelum membangun paket.
-Archive lokal lama bukan bukti bahwa semua file workspace siap dirilis.
+Path pada [identitas dataset](dataset_evidence.csv) sekarang merupakan referensi
+historis ke bukti privat yang dikecualikan, bukan input yang tersedia untuk
+menjalankan paket publik. Hash dan temuan lama dipertahankan. Pernyataan
+"untracked" dari audit awal adalah keadaan saat audit tersebut; sebelum
+sanitasi kandidat, materi penelitian kemudian terlacak dalam baseline Git
+publik. Menghapus file dari snapshot baru tidak menghapus riwayat paparan.
 
-## 3. Lembar keputusan F1–F9
+## 5. Status kandidat dan publikasi
 
-`docs/dataset_distribution_review.csv` berisi sembilan baris yang siap dibahas:
+Versi kandidat `1.0.0`, tag yang dimaksud `v1.0.0`, repository
+https://github.com/dwi-wijonarko-unej/pm-bg-aes-supplementary.
+Run demo yang ditetapkan: `v1.0.0-demo-20261008T020017Z`, dengan bukti hasil
+pada `results/runs/v1.0.0-demo-20261008T020017Z/` dan latest copies.
 
-- Sumber/pemilik hak: belum terdokumentasi.
-- Bukti izin: belum tercatat; tidak disimpulkan dari ekstensi/nama/hash.
-- Tindakan yang diusulkan: kecualikan triplet dari rilis publik awal.
-- Keputusan tim: belum ditetapkan.
-
-Untuk setiap ID, tim dapat memilih:
-
-1. **Publik:** catat pemilik/sumber, lisensi/ketentuan, file yang disetujui,
-   bukti persetujuan, penanggung jawab, dan tanggal keputusan. Original,
-   encrypted, dan decrypted tidak dianggap otomatis satu izin bersama.
-2. **Terbatas:** jelaskan mekanisme akses yang memang disepakati serta
-   penanggung jawabnya. Jangan menjanjikan "available upon request" sebelum
-   prosedur dan kontak tersedia.
-3. **Tidak didistribusikan:** dokumentasikan keputusan/alasannya tanpa
-   menyatakan file hilang atau hasil telah direproduksi.
-4. **Belum diputuskan:** pertahankan pengecualian publik dan status draft.
-
-Saya tidak mengisi nama penanggung jawab, pemilik hak, atau tanggal persetujuan
-atas nama tim. Keberadaan file lokal tidak membuktikan bahwa file boleh
-diedarkan internal tanpa batas; review dilakukan hanya melalui pihak yang
-berwenang menerima bahan tersebut.
-
-## 4. Pernyataan lokal yang bisa dipakai sekarang
-
-> Kode, dokumentasi, dan data demo sintetis milik repository berlisensi MIT.
-> Pemeriksaan lokal menemukan padanan numerik Table 3 pada output notebook
-> tersimpan dan seluruh baris Table 7 pada laporan teks. F1–F9 tersedia lokal
-> dan integritas sembilan pasangan original–decrypted terverifikasi.
-> Atribusi run historis dan izin distribusi per file belum terdokumentasi.
-> Untuk pembahasan tim, rilis awal diusulkan berfokus pada kode, data demo,
-> hasil demo, dan metadata yang telah lolos review; file penelitian dan
-> laporan pendukung dikecualikan sampai izin serta cakupan rilis ditetapkan.
-> Pernyataan ini tidak menyatakan publikasi telah dilakukan atau seluruh
-> hasil paper telah direproduksi.
-
-Draft availability berbahasa Inggris ada di
-[availability statement](availability_statement_draft.md). Jangan isi URL/DOI
-fiktif atau mengganti bentuk "diusulkan" menjadi "telah disetujui" sebelum
-keputusan yang relevan tercatat.
-
-## 5. Pesan pembahasan siap-kirim
-
-> Rekan-rekan, berdasarkan pemeriksaan repository saya mengusulkan kita
-> mengakui dua hal secara terpisah: (1) kecocokan angka dan konsistensi
-> artefak sudah diperiksa, tetapi atribusi run asli belum lengkap; (2) MIT
-> berlaku untuk materi milik repository, tetapi hak distribusi F1–F9 dan
-> laporan pendukung belum terdokumentasi.
->
-> Untuk rilis awal, usulannya adalah kode, DEMO-001..011, hasil demo berlabel
-> jelas, dan metadata yang lolos review. F1–F9 beserta ciphertext/decrypted
-> dan folder laporan penelitian tidak dimasukkan dahulu. Mohon tim menilai
-> atau mengoreksi draft ini, mengonfirmasi pelaksana/versi/lingkungan/run yang
-> mendasari Tables 3/7, dan menetapkan status distribusi tiap file dengan
-> bukti haknya. Jika informasi historis tidak tersedia, cukup dokumentasikan
-> keterbatasannya; tidak perlu membuat ulang angka lalu menyebutnya run asli.
->
-> Usulan ini belum menjadi persetujuan publikasi. Setelah keputusan tim
-> tercatat, dokumentasi, daftar inklusi, dan paket rilis dapat difinalkan.
+Local candidate prepared; publication performed by maintainer after candidate validation.
+Belum ada klaim publikasi, tanggal rilis atau DOI. Kandidat arsip v1.0.0 harus
+sesuai snapshot bersih, bukan ZIP lama yang hanya mendapat patch dokumentasi.
+Lihat [persetujuan rilis](release_approval.md),
+[pernyataan availability](availability_statement_draft.md) dan
+[batasan](limitations.md).
