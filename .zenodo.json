@@ -14,6 +14,6 @@
     { "name": "Hakim, Dani Lukman" },
     { "name": "Wijonarko, Dwi" }
   ],
-  "license": null,
-  "notes": "DRAFT for local review only. License, contributor roles, related paper identifiers, and DOI pending author confirmation (docs/author_questions.md). Related paper DOI only to be added when known. Do not publish from this file."
+  "license": "mit",
+  "notes": "MIT confirmed by the repository maintainer on 2026-10-08 for repository-owned code, documentation, and synthetic demo data. Third-party dataset/report permissions are separate and remain pending. Contributor roles, related paper identifiers, DOI, and release approval remain unconfirmed (docs/author_questions.md). Related paper DOI only to be added when known. Do not publish from this file."
 }

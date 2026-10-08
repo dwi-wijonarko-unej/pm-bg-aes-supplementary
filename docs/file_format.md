@@ -8,9 +8,18 @@ offset  size  field      dtype   endianness  notes
 12+len_hill  variable  aes_tail uint8 —      16-byte IV + k×16-byte CBC ciphertext (k>=1)
 ```
 
-Total size = `12 + len_hill + 16 * (1 + floor((len_shift + 1) / 16) ... )`;
-precisely: tail = `16 (IV) + 16 * ceil(max(len_shift,0)+1 … )` — i.e. PKCS#7
-always adds 1..16 pad bytes, so the tail is at least 32 bytes.
+For nonnegative residual length `len_shift`, the precise size is:
+
+```text
+aes_tail_size = 16 + 16 * (floor(len_shift / 16) + 1)
+total_size = 12 + len_hill + aes_tail_size
+```
+
+PKCS#7 always adds 1..16 bytes, so the tail is at least 32 bytes, including
+its IV. F9's available ciphertext has `n=32`, `len_hill=5423488` and no
+plaintext residual; its 32-byte AES segment and 12-byte header still add
+44 bytes. This segment is not evidence of a Shift128 plaintext residual.
+See `docs/evidence_audit.md`.
 
 ## Structural validation (`unpack_ciphertext`)
 

@@ -7,6 +7,7 @@ name = "pm-bg-aes"
 version = "0.1.0"
 description = "PM-BG-AES hybrid codec research artifact (archival supplementary package)"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24", "pycryptodome>=3.18", "psutil>=5.9"]
 authors = [{ name = "Contributors pending author confirmation (see docs/author_questions.md Q7)" }]

@@ -27,5 +27,5 @@ keywords:
   - permutation matrix
   - AES-CBC
   - reproducibility
-license: "License selection pending author approval (see LICENSE)"
+license: MIT
 repository-code: "[GITHUB_REPOSITORY_URL]"

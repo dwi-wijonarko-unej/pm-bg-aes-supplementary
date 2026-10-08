@@ -32,3 +32,16 @@ behaviour-equivalent to the canonical notebook cell on all exercised inputs.
 Wrong-password and malformed-input behaviour is covered in
 `tests/test_aes_tail.py` / `tests/test_crypto_format.py` with the
 non-guarantee documented in `docs/limitations.md`.
+
+## Audit validation and scope (2026-10-08)
+
+`PYTHONPATH=src python -m pytest -q -p no:cacheprovider` passed 64 tests with
+one RuntimeWarning from empty-input entropy in the notebook reference. This
+run was not written over the historical `results/logs/test_report.txt`.
+
+Package/reference equivalence on exercised cases does not establish original
+experiment provenance, timing/allocation equality, UCEF reproduction,
+security guarantees or publication rights. Additional supplied F1..F9
+materials and the separate Shift128 notebook are documented in
+`docs/evidence_audit.md`; the Shift128 variant is not tested by this reference
+comparison.

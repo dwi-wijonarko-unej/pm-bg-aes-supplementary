@@ -135,7 +135,7 @@ def write_manifest(rows: list, demo_dir: str, manifest_path: str) -> None:
             w.writerow([dsid, fname, os.path.join("data/demo", fname), category,
                         "synthetic", len(blob), sha256(blob), md5(blob),
                         "scripts/generate_demo_data.py", SEED,
-                        "CC0-1.0 (pending author approval)", "yes",
+                        "MIT", "yes",
                         "", notes])
 
 

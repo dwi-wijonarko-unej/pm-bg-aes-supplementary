@@ -21,6 +21,8 @@ SHA-256/MD5, sizes, and coverage notes.
 - `DEMO-011` zero bytes 5.2 MB (n=32).
 
 `manuscript_dataset_id` is empty for every row: no demo file reproduces or
-stands in for the original F1..F9 manuscript inputs. License intent for the
-synthetic data: CC0-1.0 — **pending author approval** (see
-`docs/author_questions.md` Q6).
+stands in for the original F1..F9 manuscript inputs. Repository-owned
+synthetic demonstration data are licensed under MIT, confirmed by the
+repository maintainer on 2026-10-08 (see `LICENSE` and
+`docs/author_questions.md` Q6). This does not license third-party research
+inputs or reports under `results/analysis result/`.

@@ -19,12 +19,13 @@ Given input bytes `mp` (uint8 array, order preserved as read) and password
    (`src/pm_bg_aes/permutation.py`). Inverse = transpose (orthogonality).
    No password-seeded shuffling, no extra swaps, no graph traversal at
    runtime; the `n!` key-space phrase in the manuscript is a combinatorial
-   upper bound, not the implemented diversity (at most 4 distinct matrices
-   per `n`). Do not claim otherwise.
+   upper bound, not the implemented diversity: each supported `n` selects
+   one fixed matrix, independent of the password. Since `n` is stored in the
+   header, the main-part inverse is publicly reconstructible.
 4. **Split**: `len_shift = N % n` (AES tail), `len_hill = N - len_shift`
    (matrix part).
 5. **Matrix transform**: `hill = (P_int32 @ main.reshape(n, len_hill/n)_int32)
-   % 256 → uint8`, flattened in the same C order. Decrypt uses `P.T`.
+% 256 → uint8`, flattened in the same C order. Decrypt uses `P.T`.
 6. **AES tail**: key = `SHA256("0."+str(password)+"1")`, random IV, AES-CBC,
    PKCS#7; output `IV + ciphertext` (`src/pm_bg_aes/aes_tail.py`).
    Actual behaviour: any password string is accepted (the "digits only"
@@ -32,6 +33,20 @@ Given input bytes `mp` (uint8 array, order preserved as read) and password
 7. **Container**: `header(n) + header(len_hill) + hill + aes_tail`; decrypt
    parses, splits, inverts, concatenates (`src/pm_bg_aes/crypto.py`,
    `src/pm_bg_aes/file_format.py`).
+
+## Separate Shift128 notebook (not the archival reference)
+
+The 2026-10-08 audit found `results/analysis result/PM-BG + AES (works).ipynb`.
+It implements complete-graph/unimodular matrices, `+128/-128 mod 256` on the
+residual, and AES-128-CBC on the whole combined result, with deterministic
+parameter-derived key/IV. That is not the pipeline described above, whose
+32-byte SHA-256 key is AES-256 and whose AES covers only the tail.
+
+Finding this implementation does not establish the source of Figure 7 or
+UCEF's residual analysis. Canonical F9 has `5423488 % 32 == 0`, hence no
+plaintext residual (the AES segment still contains IV/padding). Variant/run
+mapping and the evaluated segment must be confirmed by the experimenter.
+See `docs/evidence_audit.md` and `docs/author_questions.md` Q3.
 
 ## Engineering vs. semantic changes
 
